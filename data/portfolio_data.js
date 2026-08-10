@@ -15,7 +15,7 @@ window.PORTFOLIO_DATA = {
     { "label": "Years Experience", "value": "9.5+" },
     { "label": "Enterprise Projects", "value": "12+" },
     { "label": "Cloud & AI Certifications", "value": "5+" },
-    { "label": "Automated GitHub Repos", "value": "4" }
+    { "label": "Automated GitHub Repos", "value": "3" }
   ],
   "featured_projects": [
     {
@@ -47,16 +47,6 @@ window.PORTFOLIO_DATA = {
       "live_url": "https://siddharthsbhadauria.github.io/awesome-ai-discoveries/",
       "github_url": "https://github.com/siddharthsbhadauria/awesome-ai-discoveries",
       "badge": "Automated Bot"
-    },
-    {
-      "id": "cloud-cost-arbitrage",
-      "title": "Cloud-Cost-Arbitrage",
-      "tagline": "Multi-Cloud Compute & Tokenomics Cost Arbitrage Engine",
-      "description": "Data analytics pipeline comparing spot VM compute instances and LLM token pricing across AWS, Azure, and GCP to calculate real-time cost arbitrage opportunities.",
-      "tech": ["Python", "DuckDB", "Polars", "GitHub Actions"],
-      "live_url": "https://github.com/siddharthsbhadauria/cloud-cost-arbitrage",
-      "github_url": "https://github.com/siddharthsbhadauria/cloud-cost-arbitrage",
-      "badge": "FinOps Engine"
     }
   ],
   "experience": [
