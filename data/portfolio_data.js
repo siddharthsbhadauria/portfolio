@@ -8,7 +8,7 @@ window.PORTFOLIO_DATA = {
     "linkedin": "https://linkedin.com/in/siddharthsbhadauria",
     "credly": "https://www.credly.com/users/siddharthsbhadauria/badges/credly",
     "github": "https://github.com/siddharthsbhadauria",
-    "resume_url": "assets/Siddharth_Singh_Bhadauria_Resume.docx",
+    "resume_url": "assets/Siddharth_Singh_Bhadauria_Resume.pdf",
     "bio": "Senior Cloud, Data, and AI Engineer with over 11.5 years of experience architecting enterprise multi-cloud platforms, Generative AI infrastructure, and automated data pipelines across GCP, AWS, and Azure. Certified Google Professional ML & Data Engineer."
   },
   "stats": [
