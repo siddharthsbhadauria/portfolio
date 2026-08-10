@@ -3,26 +3,26 @@
     "name": "Siddharth Singh Bhadauria",
     "title": "Senior Cloud / Data / AI Engineer",
     "location": "London, UK",
-    "experience_years": "9.5+",
+    "experience_years": "11.5+",
     "email": "siddharthsbhadauria@gmail.com",
-    "linkedin": "http://linkedin.com/in/siddharthsbhadauria/",
+    "linkedin": "https://linkedin.com/in/siddharthsbhadauria",
     "credly": "https://www.credly.com/users/siddharthsbhadauria/badges/credly",
     "github": "https://github.com/siddharthsbhadauria",
-    "resume_url": "assets/Siddharth_Bhadauria_CV.docx",
-    "bio": "Senior Cloud, Data, and AI Engineer with 9.5+ years of experience building enterprise-scale GenAI platforms, cloud data pipelines, and infrastructure automation across GCP, AWS, and Azure. Specialized in LLM evaluation, RAG vector architectures, dbt analytics, and self-hosted homelab telemetry."
+    "resume_url": "assets/Siddharth_Singh_Bhadauria_Resume.docx",
+    "bio": "Senior Cloud, Data, and AI Engineer with over 11.5 years of experience architecting enterprise multi-cloud platforms, Generative AI infrastructure, and automated data pipelines across GCP, AWS, and Azure. Certified Google Professional ML & Data Engineer."
   },
   "stats": [
-    { "label": "Years Experience", "value": "9.5+" },
-    { "label": "Enterprise Projects", "value": "12+" },
-    { "label": "Cloud & AI Certifications", "value": "5+" },
-    { "label": "Automated GitHub Repos", "value": "3" }
+    { "label": "Years Experience", "value": "11.5+" },
+    { "label": "Enterprise Projects", "value": "14+" },
+    { "label": "Credly Certifications", "value": "11" },
+    { "label": "Open-Source Repos", "value": "4" }
   ],
   "featured_projects": [
     {
       "id": "cloud-finops-rag",
       "title": "Cloud-FinOps-RAG",
       "tagline": "Autonomous Multi-Cloud AI Tokenomics & Price Benchmark Evaluator",
-      "description": "Serverless data engineering pipeline built on GitHub Actions. Dynamically ingests tokenomics across Google Gemini 3.6, Anthropic Claude 3.7, OpenAI GPT-4.5/o3-mini, and DeepSeek, validates schemas via Great Expectations, computes cost-per-intelligence ratios in DuckDB, and generates daily RAG executive summaries.",
+      "description": "Serverless data engineering pipeline built on GitHub Actions. Dynamically ingests tokenomics across 15+ LLM provider endpoints (Google Gemini, Anthropic Claude, OpenAI GPT-4.5/o3-mini, DeepSeek), validates schemas via Great Expectations, computes cost-per-intelligence ratios in DuckDB, and generates daily RAG executive summaries.",
       "tech": ["Python", "DuckDB", "Great Expectations", "RAG", "GitHub Actions", "GitHub Pages"],
       "live_url": "https://siddharthsbhadauria.github.io/cloud-finops-rag/",
       "github_url": "https://github.com/siddharthsbhadauria/cloud-finops-rag",
@@ -32,7 +32,7 @@
       "id": "auto-datapulse",
       "title": "Auto-DataPulse",
       "tagline": "UGREEN NAS Infrastructure Telemetry & Lakehouse Engine",
-      "description": "Containerized homelab Lakehouse optimized for UGREEN NAS (32 GB RAM, Portainer). Ingests system metrics, executes Great Expectations contract gates, models gold analytics via dbt-core + DuckDB, and automatically publishes daily infrastructure health logs to GitHub.",
+      "description": "Containerized homelab Lakehouse optimized for UGREEN NAS (32 GB RAM, Portainer). Ingests system metrics across 20+ containerized sensors, executes Great Expectations contract gates, models gold analytics via dbt-core + DuckDB, and automatically publishes daily infrastructure health logs to GitHub.",
       "tech": ["Docker", "Portainer", "DuckDB", "dbt Core", "Great Expectations", "Python 3.11"],
       "live_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
       "github_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
@@ -47,69 +47,239 @@
       "live_url": "https://siddharthsbhadauria.github.io/awesome-ai-discoveries/",
       "github_url": "https://github.com/siddharthsbhadauria/awesome-ai-discoveries",
       "badge": "Automated Bot"
+    },
+    {
+      "id": "portfolio",
+      "title": "Interactive Engineering Portfolio",
+      "tagline": "Personal Interactive Engineering Portfolio & Live Showcase",
+      "description": "Responsive glassmorphism portfolio site showcasing enterprise architecture patterns, Credly verified badges, interactive project cards, and open-source contributions. Hosted on GitHub Pages.",
+      "tech": ["HTML5", "Vanilla CSS", "JavaScript", "GitHub Pages"],
+      "live_url": "https://siddharthsbhadauria.github.io/portfolio/",
+      "github_url": "https://github.com/siddharthsbhadauria/portfolio",
+      "badge": "Portfolio Site"
     }
   ],
   "experience": [
     {
-      "company": "Deloitte",
-      "role": "Senior Developer – GenAI PairD & LLM Evaluation",
-      "period": "London, UK",
+      "company": "Deloitte (Client: JPMorgan Chase & Co.)",
+      "role": "Senior Cloud Infrastructure & Observability Engineer",
+      "period": "London, UK | June 2026 - Present",
       "highlights": [
-        "Architected and developed Deloitte's enterprise PairD GenAI platform serving 75,000+ employees with OpenAI GPT, Google Gemini, and Qdrant vector search.",
-        "Created an LLM evaluation framework using Confident AI DeepEval across MMLU, Answer Relevancy, and Contextual Accuracy for Mistral 7B, Llama 3, and Gemini on GCP Vertex AI.",
-        "Built DataSAFE encryption pipeline for PII masking using GPG, Python Cryptography, Azure Blob Storage, and Azure Functions."
+        "Architected and implemented the GCP observability, logging, and asset inventory module within JPMorgan Chase's ATLAS 2.0 Multi-Cloud Unified Control Plane platform.",
+        "Configured GCP observability telemetry workflows, establishing Log Buckets, Log Routers, and Log Sinks to stream over 50M+ daily log events to BigQuery and Pub/Sub with sub-second ingestion latency.",
+        "Configured Kafka Connect Source Connectors to stream log events from GCP Pub/Sub to enterprise Databus streams for downstream log distribution.",
+        "Configured Google Cloud Storage Object Lifecycle Management rules on log buckets to automatically transition telemetry objects from hot tier storage to archive tier (Nearline, Coldline, Archive), optimizing retention costs.",
+        "Enforced banking security compliance by securing GCP Logging Buckets with Customer-Managed Encryption Keys (CMEK) via Cloud KMS.",
+        "Created BigQuery Linked Datasets directly connected to GCP Logging Buckets, reducing log storage overhead by 40% while enabling real-time SQL analysis without data duplication.",
+        "Built automated asset inventory tracking pipelines utilizing Cloud Asset Inventory (CAI), Cloud Functions, and Cloud Scheduler for 10,000+ cloud resources."
       ]
     },
     {
-      "company": "UBS AG",
-      "role": "Azure Data Engineer – Credit Suisse Migration",
-      "period": "London, UK",
+      "company": "Career Break",
+      "role": "Parental Leave",
+      "period": "London, UK | Oct 2025 - May 2026",
       "highlights": [
-        "Led migration pipelines for Credit Suisse to UBS data integration using Azure Data Factory (ADF), Azure Functions, and PostgreSQL/Sybase/Oracle databases.",
-        "Orchestrated cloud infrastructure using Terraform scripts and GitLab CI/CD pipelines."
+        "Took planned parental leave following the successful completion of the AWS EKS cluster deployment project for JPMorgan Chase."
+      ]
+    },
+    {
+      "company": "Deloitte (Client: JPMorgan Chase & Co.)",
+      "role": "Senior Consultant & DevOps Engineer",
+      "period": "London, UK | Aug 2024 - Sept 2025",
+      "highlights": [
+        "Created, managed, and continuously improved a Terraform AWS EKS cluster module alongside a Stack microservices blueprint for JPMorgan Chase, reducing provisioning time by 65%.",
+        "Scaled EKS Cluster module to over 3,600+ active deployments supporting 700+ microservices applications across 20+ Lines of Business (LoBs) across the bank.",
+        "Evolved EKS cluster module into a multi-tenant deployment model and managed zero-downtime Kubernetes version upgrades (v1.19 through v1.34) supporting 50+ Production releases.",
+        "Built automated testing and acceptance test suites using Python and Go to validate module enhancements on EKS clusters."
+      ]
+    },
+    {
+      "company": "Deloitte (Internal: PairD GenAI Platform)",
+      "role": "Senior Consultant",
+      "period": "London, UK | May 2024 - Aug 2024",
+      "highlights": [
+        "Co-engineered Deloitte's internal PairD Generative AI platform serving 75,000+ employees, handling 100,000+ daily queries across OpenAI GPT and Google Gemini models.",
+        "Architected secure networking using Google Private Service Connect (PSC) and custom DNS forwarding to achieve 100% network isolation with zero public internet exposure for Gemini models.",
+        "Designed scalable RAG pipelines with Postgres pgvector and Qdrant; accelerated team engineering velocity by 35% using AI coding tools (GitHub Copilot, Claude Code, Google Antigravity)."
+      ]
+    },
+    {
+      "company": "Deloitte (Internal: GenAI LLM Evaluation)",
+      "role": "Senior Consultant",
+      "period": "London, UK | Apr 2024 - May 2024",
+      "highlights": [
+        "Built an automated LLM evaluation pipeline using Confident AI DeepEval to quantify model quality across 4 core metrics (Answer Relevancy, Contextual Accuracy, Completeness, Latency) for Mistral 7B, Llama 3, and Gemini 1.0 Pro on GCP Vertex AI.",
+        "Authored Python automation scripts to harvest and visualize metrics, reducing benchmarking cycle time from 2 weeks to under 4 hours."
+      ]
+    },
+    {
+      "company": "Deloitte (Internal: DataSAFE Accelerator)",
+      "role": "Architect & Senior Developer",
+      "period": "London, UK | Dec 2023 - Mar 2024",
+      "highlights": [
+        "Designed data processing architecture for 10TB+ of GPG-encrypted datasets with 100% file integrity validation.",
+        "Engineered Python scripts for PII detection and masking across 1,000+ database columns using Fernet cryptography, Azure Blob Storage, Azure Cosmos DB, and Azure Key Vault."
+      ]
+    },
+    {
+      "company": "Deloitte (Client: UBS AG)",
+      "role": "Azure Data Engineer",
+      "period": "London, UK | Jul 2023 - Aug 2023",
+      "highlights": [
+        "Developed data migration and archival pipelines moving legacy Credit Suisse applications and trade data into UBS Azure cloud infrastructure across 1,000+ core systems.",
+        "Built Python-backed Azure Functions and Azure Data Factory (ADF) pipelines, accelerating ingestion throughput by 3x from PostgreSQL, Sybase, and Oracle databases."
+      ]
+    },
+    {
+      "company": "Deloitte (Client: Virgin Media O2)",
+      "role": "Senior Cloud Data Engineer",
+      "period": "London, UK | Jul 2022 - Apr 2023",
+      "highlights": [
+        "Architected cloud ingestion framework for 40,000+ employee HR records from Oracle HCM, Workday, and SuccessFactors into GCP BigQuery.",
+        "Enforced data security through GPG encryption, role-based access controls, and automated key rotation shell scripts, reducing overhead by 80%."
+      ]
+    },
+    {
+      "company": "Deloitte (Client: Motor Insurers’ Bureau)",
+      "role": "Data Engineer",
+      "period": "London, UK | Mar 2021 - May 2021",
+      "highlights": [
+        "Engineered data quality scoring platform on Azure for 35M+ vehicle insurance records across MID, CUE, and MIAFTR databases using Terraform, ADF, Azure SQL, and IICS."
       ]
     },
     {
       "company": "HSBC",
-      "role": "Senior Cloud Data Engineer & Scrum Master",
-      "period": "London & Sheffield, UK / Pune, India",
+      "role": "Senior Cloud & Data Engineer",
+      "period": "London, UK / Pune, India | Jan 2015 - Nov 2021",
       "highlights": [
-        "Led POC for migrating CESOP financial payment application from AWS to GCP using DataProc, Cloud Functions, and Terraform.",
-        "Built near-real-time data ingestion pipelines connecting Apache Kafka, IBM CDC, AWS Kinesis, and Google Cloud Pub/Sub to BigQuery."
-      ]
-    },
-    {
-      "company": "Virgin Media O2",
-      "role": "Senior Cloud Data Engineer",
-      "period": "London, UK",
-      "highlights": [
-        "Built GCP ingestion pipeline for hyper-sensitive HR data across Workday, SuccessFactors, and BigQuery with GPG encryption and dbt transformations."
+        "Executed AWS to GCP migration proof-of-concept for CESOP financial payment reporting using Terraform, DataProc, and Cloud Functions.",
+        "Engineered near-real-time streaming processing 10M+ daily messages from Apache Kafka to BigQuery via GCS using Apache NiFi and Kafka Connect."
       ]
     }
   ],
   "skills": [
     {
-      "category": "Cloud Platforms & Infra",
-      "items": ["Google Cloud Platform (GCP)", "Microsoft Azure", "Amazon Web Services (AWS)", "Terraform (IaC)", "Docker & Portainer", "GitHub Actions"]
+      "category": "Cloud Infrastructure & DevOps",
+      "items": [
+        "Google Cloud Platform (GCP)",
+        "Microsoft Azure",
+        "Amazon Web Services (AWS)",
+        "AWS EKS",
+        "Multi-Cloud Unified Control Plane (ATLAS 2.0)",
+        "GCP Cloud Asset Inventory (CAI)",
+        "Log Routers & Sinks & Buckets",
+        "GCS Object Lifecycle Management",
+        "CMEK & Cloud KMS",
+        "BigQuery Linked Datasets",
+        "Terraform (IaC)",
+        "Docker & Kubernetes (AKS, GKE)",
+        "Google Private Service Connect",
+        "GitHub Actions",
+        "GitLab CI/CD"
+      ]
     },
     {
       "category": "Generative AI & MLOps",
-      "items": ["RAG Architecture", "pgvector & Qdrant", "Confident AI DeepEval", "LLM Evaluation", "Google Vertex AI", "Azure OpenAI"]
+      "items": [
+        "Retrieval-Augmented Generation (RAG)",
+        "pgvector & Qdrant & ChromaDB",
+        "Confident AI DeepEval Framework",
+        "Prompt Engineering",
+        "Azure OpenAI",
+        "GCP Vertex AI",
+        "Gemini 1.5 Pro/Flash",
+        "Llama 3",
+        "Mistral 7B"
+      ]
     },
     {
-      "category": "Data Engineering & Analytics",
-      "items": ["DuckDB", "dbt Core", "Polars & Pandas", "Great Expectations", "Azure Data Factory (ADF)", "BigQuery & SQL"]
+      "category": "AI Coding Tools",
+      "items": [
+        "GitHub Copilot",
+        "Claude Code",
+        "Google Antigravity",
+        "VS Code & Git",
+        "PyTest & Go Test"
+      ]
     },
     {
-      "category": "Big Data & Messaging",
-      "items": ["Apache Kafka", "Apache NiFi", "Google Pub/Sub", "AWS Kinesis", "IBM DataStage", "Hadoop & Hive"]
+      "category": "Data Engineering & Streaming",
+      "items": [
+        "Kafka Connect Source Connectors",
+        "Enterprise Databus",
+        "BigQuery Linked Datasets",
+        "DuckDB & Polars",
+        "Great Expectations",
+        "BigQuery & Pub/Sub",
+        "Splunk Log Ingestion",
+        "Azure Data Factory (ADF)",
+        "dbt Core",
+        "Apache Kafka & Apache NiFi"
+      ]
+    },
+    {
+      "category": "Databases & Storage",
+      "items": [
+        "PostgreSQL",
+        "Azure SQL Server",
+        "Oracle 12c & Sybase",
+        "Azure Cosmos DB",
+        "AWS S3 & DynamoDB & RDS",
+        "Google Cloud Storage (GCS)",
+        "Azure Blob Storage"
+      ]
+    },
+    {
+      "category": "Security & Compliance",
+      "items": [
+        "CMEK Encryption & Cloud KMS",
+        "PII Identification & Fernet Masking",
+        "GPG Key Management & Rotation",
+        "Private DNS Forwarding",
+        "Azure Key Vault"
+      ]
     }
   ],
   "certifications": [
     {
+      "title": "Google Cloud Certified: Professional Machine Learning Engineer",
+      "issuer": "Google Cloud",
+      "date": "2025 - 2027"
+    },
+    {
+      "title": "Google Cloud Certified: Professional Data Engineer",
+      "issuer": "Google Cloud",
+      "date": "2025 - 2027"
+    },
+    {
+      "title": "Google Cloud Certified: Generative AI Leader",
+      "issuer": "Google Cloud",
+      "date": "2026 - 2029"
+    },
+    {
+      "title": "Google Cloud Certified: Associate Data Practitioner",
+      "issuer": "Google Cloud",
+      "date": "2026 - 2029"
+    },
+    {
+      "title": "Google Cloud Certified: Cloud Digital Leader",
+      "issuer": "Google Cloud",
+      "date": "2024 - 2027"
+    },
+    {
+      "title": "AWS Certified AI Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "2024 - 2027"
+    },
+    {
+      "title": "HashiCorp Certified: Terraform Associate (003)",
+      "issuer": "HashiCorp",
+      "date": "2024 - 2026"
+    },
+    {
       "title": "AWS Certified Cloud Practitioner",
       "issuer": "Amazon Web Services",
-      "date": "2022 - 2025"
+      "date": "2022 - 2028"
     },
     {
       "title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
@@ -117,7 +287,7 @@
       "date": "2024"
     },
     {
-      "title": "Microsoft Certified: Azure Data Fundamentals (DP-900)",
+      "title": "Microsoft Certified: Data Fundamentals (DP-900)",
       "issuer": "Microsoft",
       "date": "2024"
     },
@@ -125,11 +295,6 @@
       "title": "Oracle Cloud Infrastructure: Certified Foundations Associate",
       "issuer": "Oracle",
       "date": "2024"
-    },
-    {
-      "title": "Google Cloud Certified Cloud Digital Leader",
-      "issuer": "Google Cloud",
-      "date": "2024 - 2027"
     }
   ]
 }
