@@ -1,0 +1,145 @@
+{
+  "profile": {
+    "name": "Siddharth Singh Bhadauria",
+    "title": "Senior Cloud / Data / AI Engineer",
+    "location": "London, UK",
+    "experience_years": "9.5+",
+    "email": "siddharthsbhadauria@gmail.com",
+    "linkedin": "http://linkedin.com/in/siddharthsbhadauria/",
+    "credly": "https://www.credly.com/users/siddharthsbhadauria/badges/credly",
+    "github": "https://github.com/siddharthsbhadauria",
+    "resume_url": "assets/Siddharth_Bhadauria_CV.docx",
+    "bio": "Senior Cloud, Data, and AI Engineer with 9.5+ years of experience building enterprise-scale GenAI platforms, cloud data pipelines, and infrastructure automation across GCP, AWS, and Azure. Specialized in LLM evaluation, RAG vector architectures, dbt analytics, and self-hosted homelab telemetry."
+  },
+  "stats": [
+    { "label": "Years Experience", "value": "9.5+" },
+    { "label": "Enterprise Projects", "value": "12+" },
+    { "label": "Cloud & AI Certifications", "value": "5+" },
+    { "label": "Automated GitHub Repos", "value": "4" }
+  ],
+  "featured_projects": [
+    {
+      "id": "cloud-finops-rag",
+      "title": "Cloud-FinOps-RAG",
+      "tagline": "Autonomous Multi-Cloud AI Tokenomics & Price Benchmark Evaluator",
+      "description": "Serverless data engineering pipeline built on GitHub Actions. Dynamically ingests tokenomics across Google Gemini 3.6, Anthropic Claude 3.7, OpenAI GPT-4.5/o3-mini, and DeepSeek, validates schemas via Great Expectations, computes cost-per-intelligence ratios in DuckDB, and generates daily RAG executive summaries.",
+      "tech": ["Python", "DuckDB", "Great Expectations", "RAG", "GitHub Actions", "GitHub Pages"],
+      "live_url": "https://siddharthsbhadauria.github.io/cloud-finops-rag/",
+      "github_url": "https://github.com/siddharthsbhadauria/cloud-finops-rag",
+      "badge": "Serverless Cloud-Native"
+    },
+    {
+      "id": "auto-datapulse",
+      "title": "Auto-DataPulse",
+      "tagline": "UGREEN NAS Infrastructure Telemetry & Lakehouse Engine",
+      "description": "Containerized homelab Lakehouse optimized for UGREEN NAS (32 GB RAM, Portainer). Ingests system metrics, executes Great Expectations contract gates, models gold analytics via dbt-core + DuckDB, and automatically publishes daily infrastructure health logs to GitHub.",
+      "tech": ["Docker", "Portainer", "DuckDB", "dbt Core", "Great Expectations", "Python 3.11"],
+      "live_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
+      "github_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
+      "badge": "Self-Hosted Homelab"
+    },
+    {
+      "id": "awesome-ai-discoveries",
+      "title": "Awesome-AI-Discoveries",
+      "tagline": "Automated AI GitHub Repository Aggregator & Web Directory",
+      "description": "Autonomous GitHub Actions bot that continuously discovers, sanitizes, categorizes, and logs trending open-source AI, RAG, and MCP repositories. Includes a dark glassmorphism Web Directory with theme switcher and quick view modal.",
+      "tech": ["Python", "REST API", "GitHub Actions", "Vanilla JS", "Glassmorphism CSS"],
+      "live_url": "https://siddharthsbhadauria.github.io/awesome-ai-discoveries/",
+      "github_url": "https://github.com/siddharthsbhadauria/awesome-ai-discoveries",
+      "badge": "Automated Bot"
+    },
+    {
+      "id": "cloud-cost-arbitrage",
+      "title": "Cloud-Cost-Arbitrage",
+      "tagline": "Multi-Cloud Compute & Tokenomics Cost Arbitrage Engine",
+      "description": "Data analytics pipeline comparing spot VM compute instances and LLM token pricing across AWS, Azure, and GCP to calculate real-time cost arbitrage opportunities.",
+      "tech": ["Python", "DuckDB", "Polars", "GitHub Actions"],
+      "live_url": "https://github.com/siddharthsbhadauria/cloud-cost-arbitrage",
+      "github_url": "https://github.com/siddharthsbhadauria/cloud-cost-arbitrage",
+      "badge": "FinOps Engine"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Deloitte",
+      "role": "Senior Developer – GenAI PairD & LLM Evaluation",
+      "period": "London, UK",
+      "highlights": [
+        "Architected and developed Deloitte's enterprise PairD GenAI platform serving 75,000+ employees with OpenAI GPT, Google Gemini, and Qdrant vector search.",
+        "Created an LLM evaluation framework using Confident AI DeepEval across MMLU, Answer Relevancy, and Contextual Accuracy for Mistral 7B, Llama 3, and Gemini on GCP Vertex AI.",
+        "Built DataSAFE encryption pipeline for PII masking using GPG, Python Cryptography, Azure Blob Storage, and Azure Functions."
+      ]
+    },
+    {
+      "company": "UBS AG",
+      "role": "Azure Data Engineer – Credit Suisse Migration",
+      "period": "London, UK",
+      "highlights": [
+        "Led migration pipelines for Credit Suisse to UBS data integration using Azure Data Factory (ADF), Azure Functions, and PostgreSQL/Sybase/Oracle databases.",
+        "Orchestrated cloud infrastructure using Terraform scripts and GitLab CI/CD pipelines."
+      ]
+    },
+    {
+      "company": "HSBC",
+      "role": "Senior Cloud Data Engineer & Scrum Master",
+      "period": "London & Sheffield, UK / Pune, India",
+      "highlights": [
+        "Led POC for migrating CESOP financial payment application from AWS to GCP using DataProc, Cloud Functions, and Terraform.",
+        "Built near-real-time data ingestion pipelines connecting Apache Kafka, IBM CDC, AWS Kinesis, and Google Cloud Pub/Sub to BigQuery."
+      ]
+    },
+    {
+      "company": "Virgin Media O2",
+      "role": "Senior Cloud Data Engineer",
+      "period": "London, UK",
+      "highlights": [
+        "Built GCP ingestion pipeline for hyper-sensitive HR data across Workday, SuccessFactors, and BigQuery with GPG encryption and dbt transformations."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Cloud Platforms & Infra",
+      "items": ["Google Cloud Platform (GCP)", "Microsoft Azure", "Amazon Web Services (AWS)", "Terraform (IaC)", "Docker & Portainer", "GitHub Actions"]
+    },
+    {
+      "category": "Generative AI & MLOps",
+      "items": ["RAG Architecture", "pgvector & Qdrant", "Confident AI DeepEval", "LLM Evaluation", "Google Vertex AI", "Azure OpenAI"]
+    },
+    {
+      "category": "Data Engineering & Analytics",
+      "items": ["DuckDB", "dbt Core", "Polars & Pandas", "Great Expectations", "Azure Data Factory (ADF)", "BigQuery & SQL"]
+    },
+    {
+      "category": "Big Data & Messaging",
+      "items": ["Apache Kafka", "Apache NiFi", "Google Pub/Sub", "AWS Kinesis", "IBM DataStage", "Hadoop & Hive"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "2022 - 2025"
+    },
+    {
+      "title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "issuer": "Microsoft",
+      "date": "2024"
+    },
+    {
+      "title": "Microsoft Certified: Azure Data Fundamentals (DP-900)",
+      "issuer": "Microsoft",
+      "date": "2024"
+    },
+    {
+      "title": "Oracle Cloud Infrastructure: Certified Foundations Associate",
+      "issuer": "Oracle",
+      "date": "2024"
+    },
+    {
+      "title": "Google Cloud Certified Cloud Digital Leader",
+      "issuer": "Google Cloud",
+      "date": "2024 - 2027"
+    }
+  ]
+}
