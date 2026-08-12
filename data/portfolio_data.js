@@ -70,7 +70,7 @@ window.PORTFOLIO_DATA = {
         "Automated Git sync & public health log publishing"
       ],
       "tech": ["Docker", "Portainer", "DuckDB", "dbt Core", "Great Expectations", "Python 3.11"],
-      "live_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
+      "live_url": null,
       "github_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
       "badge": "Self-Hosted Homelab"
     },

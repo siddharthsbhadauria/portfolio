@@ -1589,9 +1589,11 @@ p, h1, h2, h3, h4, h5, h6, span, a, li, td, th {
   .brand-title { font-size: 14px; white-space: nowrap; }
   .brand-tag { font-size: 9px; white-space: nowrap; }
 
-  .nav-actions { gap: 6px; }
+  .nav-actions { gap: 6px; flex-shrink: 0; }
+  .nav-actions .btn-secondary { display: none !important; } /* Hide Contact Me in header on mobile */
   .btn-icon-theme { width: 36px; height: 36px; font-size: 14px; }
   .status-badge { font-size: 10px; padding: 4px 10px; white-space: nowrap; }
+  .btn-primary { padding: 6px 12px; font-size: 11px; white-space: nowrap; }
   .btn-github { padding: 8px 12px; font-size: 12px; }
   .btn-github-text { display: none; }
 
@@ -1605,10 +1607,28 @@ p, h1, h2, h3, h4, h5, h6, span, a, li, td, th {
   .stat-number { font-size: 30px; }
   .stat-label { font-size: 11px; }
 
-  /* Controls & Grids */
+  /* Projects Mobile Layout Fix */
   .projects-grid, .skills-grid, .certs-grid { grid-template-columns: 1fr; gap: 16px; }
   .controls-bar { flex-direction: column; align-items: stretch; gap: 12px; }
   .search-box { min-width: 100%; width: 100%; }
+
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .btn-group {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .details-prompt {
+    align-self: flex-end;
+    font-size: 11px;
+    white-space: nowrap;
+    margin-top: 4px;
+  }
 
   .categories-filter {
     overflow-x: auto;
@@ -1661,4 +1681,5 @@ p, h1, h2, h3, h4, h5, h6, span, a, li, td, th {
   .status-badge { font-size: 9px; padding: 3px 8px; }
   .hero-badge { font-size: 10px; padding: 4px 12px; }
 }
+
 
