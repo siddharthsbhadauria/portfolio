@@ -15,9 +15,27 @@ window.PORTFOLIO_DATA = {
     { "label": "Years Experience", "value": "11.5+" },
     { "label": "Enterprise Projects", "value": "14+" },
     { "label": "Certifications", "value": "11" },
-    { "label": "Open-Source Repos", "value": "4" }
+    { "label": "Open-Source Repos", "value": "5" }
   ],
   "featured_projects": [
+    {
+      "id": "tf-cost-governor",
+      "category": "homelab",
+      "title": "TF-Cost-Governor",
+      "tagline": "Automated Multi-Cloud Terraform FinOps & Security Advisory Engine",
+      "description": "Serverless IaC governance engine built on GitHub Actions. Parses multi-cloud Terraform blueprints across AWS EKS, GCP Vertex AI, and Azure AKS, evaluates cost benchmarks & Policy-as-Code rules via DuckDB and Checkov, and deploys a live JetBrains Mono digital advisory dashboard.",
+      "long_description": "TF-Cost-Governor is an automated multi-cloud IaC evaluation engine designed to enforce cloud cost optimization and security compliance across Terraform codebases. Running on scheduled GitHub Actions workflows, it parses HCL modules for AWS, GCP, and Azure, runs in-memory SQL analytics using DuckDB, evaluates Checkov policy guardrails, and renders real-time governance metrics on GitHub Pages.",
+      "architecture": [
+        "Multi-cloud HCL blueprints for AWS EKS, GCP Vertex AI, and Azure AKS",
+        "Automated daily GitHub Actions evaluation workflow",
+        "DuckDB in-memory SQL analytics & Checkov Policy-as-Code scanning",
+        "JetBrains Mono interactive governance dashboard on GitHub Pages"
+      ],
+      "tech": ["Terraform", "DuckDB", "Python 3.11", "GitHub Actions", "Checkov", "GitHub Pages"],
+      "live_url": "https://siddharthsbhadauria.github.io/tf-cost-governor/",
+      "github_url": "https://github.com/siddharthsbhadauria/tf-cost-governor",
+      "badge": "Automated IaC Engine"
+    },
     {
       "id": "cloud-finops-rag",
       "category": "genai",
@@ -80,9 +98,9 @@ window.PORTFOLIO_DATA = {
       "title": "Interactive Engineering Portfolio",
       "tagline": "Personal Interactive Engineering Portfolio & Live Showcase",
       "description": "Responsive glassmorphism portfolio site showcasing enterprise architecture patterns, Credly digital badges, interactive project cards, and open-source contributions. Hosted on GitHub Pages.",
-      "long_description": "State-of-the-art developer showcase site designed with modern typography inspired by Claude and modern design systems. Features dynamic dual vibrant theme engine (Light & Dark mode), search & filter matrix, interactive modals, responsive glassmorphism aesthetic, and zero-dependency Vanilla JS architecture.",
+      "long_description": "State-of-the-art developer showcase site designed with modern JetBrains Mono typography and digital design systems. Features dynamic dual vibrant theme engine (Light & Dark mode), search & filter matrix, interactive modals, responsive glassmorphism aesthetic, and zero-dependency Vanilla JS architecture.",
       "architecture": [
-        "Claude-inspired typography hierarchy using Instrument Sans & Plus Jakarta Sans",
+        "JetBrains Mono typography hierarchy for digital tech aesthetics",
         "Vibrant CSS custom property design system supporting dark & light themes",
         "Dynamic Vanilla JS client-side filtering, search, and state management",
         "GitHub Pages automated deployment"
