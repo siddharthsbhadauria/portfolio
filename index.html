@@ -4,20 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Siddharth Singh Bhadauria | Senior Cloud, Data & AI Engineer</title>
-  <meta name="description" content="Portfolio of Siddharth Singh Bhadauria - Senior Cloud, Data, and AI Engineer (11.5+ yrs exp) specializing in GenAI, GCP, AWS, Azure, DuckDB, RAG, and dbt.">
+  <meta name="description" content="Portfolio of Siddharth Singh Bhadauria - Senior Cloud, Data & AI Engineer (11.5+ yrs exp) specializing in GCP, AWS, Azure, Multi-Cloud Control Planes, GenAI, DuckDB & Terraform.">
+  <meta name="author" content="Siddharth Singh Bhadauria">
+  <meta name="keywords" content="Cloud Engineer, Data Engineer, GenAI, GCP, AWS, Azure, JPMorgan Chase, Deloitte, Terraform, EKS, RAG, DuckDB, London">
 
-  <!-- Google Fonts -->
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Siddharth Singh Bhadauria | Senior Cloud, Data & AI Engineer">
+  <meta property="og:description" content="11.5+ years architecting enterprise multi-cloud platforms, Generative AI infrastructure, and automated data pipelines across GCP, AWS, and Azure.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: JetBrains Mono (Universal Digital Font) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=1.1.0">
+  <link rel="stylesheet" href="style.css?v=9.0.0">
 
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <!-- Dynamic SVG Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
 </head>
 <body>
-  <!-- Ambient background glow -->
+  <!-- Ambient background glow mesh -->
   <div class="glow-bg glow-indigo"></div>
   <div class="glow-bg glow-purple"></div>
   <div class="glow-bg glow-cyan"></div>
@@ -25,11 +32,13 @@
   <!-- Navbar -->
   <header class="navbar">
     <div class="container nav-content">
-      <a href="#" class="brand">
-        <span class="brand-icon">⚡</span>
+      <a href="#" class="brand" title="Siddharth Singh Bhadauria">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><polyline points="10 13 8 15 10 17"/><polyline points="14 13 16 15 14 17"/></svg>
+        </div>
         <div class="brand-text">
           <span class="brand-title">Siddharth Bhadauria</span>
-          <span class="brand-tag">Cloud / Data / AI Engineer</span>
+          <span class="brand-tag">Cloud &bull; Data &bull; AI Engineer</span>
         </div>
       </a>
 
@@ -38,15 +47,21 @@
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-actions">
-        <button id="themeToggle" class="btn btn-icon-theme" title="Toggle Light / Dark Mode">
+        <button id="themeToggle" class="btn-icon-theme" title="Toggle Theme" aria-label="Toggle Theme">
           <span class="theme-icon-dark">🌙</span>
           <span class="theme-icon-light">☀️</span>
         </button>
 
-        <a href="assets/Siddharth_Singh_Bhadauria_Resume.pdf" class="btn btn-primary" download>
+        <a href="#contact" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact Me
+        </a>
+
+        <a href="assets/Siddharth_Singh_Bhadauria_Resume.pdf" class="btn btn-primary" download target="_blank">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
           Download CV
         </a>
@@ -56,40 +71,67 @@
 
   <!-- Hero Section -->
   <section class="hero container">
-    <div class="hero-badge">
-      <span class="pulse-dot"><span class="dot"></span></span> London, UK &bull; Available for Senior Cloud & AI Roles
-    </div>
+    <div class="hero-grid-layout">
+      <!-- Main Text Content -->
+      <div class="hero-text-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"><span class="dot"></span></span> London, UK &bull; Available for Senior Cloud & AI Roles
+        </div>
 
-    <h1 class="hero-title">
-      Building Enterprise <span class="gradient-text">GenAI Platforms</span> &<br>
-      Automated Cloud Data Architectures
-    </h1>
+        <h1 class="hero-title">
+          Building Enterprise <span class="gradient-text">GenAI Platforms</span> &<br>
+          Automated Cloud Data Architectures
+        </h1>
 
-    <p class="hero-subtitle">
-      Senior Cloud, Data & AI Engineer with <strong>11.5+ years of experience</strong> architecting multi-cloud solutions across <strong>GCP, AWS, and Azure</strong>. Certified Google Professional ML & Data Engineer building multi-cloud unified control plane logging platforms, large-scale EKS infrastructure, self-hosted homelab lakehouses, and enterprise GenAI systems.
-    </p>
+        <p class="hero-subtitle">
+          Senior Cloud, Data & AI Engineer with <strong>11.5+ years of experience</strong> architecting multi-cloud solutions across <strong>GCP, AWS, and Azure</strong>. Certified Google Professional ML & Data Engineer building multi-cloud unified control plane observability systems, large-scale EKS infrastructure, self-hosted homelab lakehouses, and enterprise GenAI platforms.
+        </p>
 
-    <!-- Call to Action Buttons -->
-    <div class="hero-cta">
-      <a href="https://github.com/siddharthsbhadauria" target="_blank" rel="noopener" class="btn btn-github">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        GitHub Profile
-      </a>
+        <!-- Social Buttons -->
+        <div class="hero-cta">
+          <a href="https://github.com/siddharthsbhadauria" target="_blank" rel="noopener" class="btn btn-github">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
 
-      <a href="https://linkedin.com/in/siddharthsbhadauria" target="_blank" rel="noopener" class="btn btn-linkedin">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
-        LinkedIn Profile
-      </a>
+          <a href="https://linkedin.com/in/siddharthsbhadauria" target="_blank" rel="noopener" class="btn btn-linkedin">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+            LinkedIn
+          </a>
 
-      <a href="https://www.credly.com/users/siddharthsbhadauria/badges/credly" target="_blank" rel="noopener" class="btn btn-credly">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        Credly Badges (11)
-      </a>
+          <a href="https://www.credly.com/users/siddharthsbhadauria/badges/credly" target="_blank" rel="noopener" class="btn btn-credly">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            Credly
+          </a>
+        </div>
+      </div>
+
+      <!-- Terminal Window Widget -->
+      <div class="cyber-terminal">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="terminal-title">siddharth@github:~</span>
+          <span class="terminal-badge">ONLINE</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <!-- Dynamically streamed terminal output -->
+        </div>
+        <div class="terminal-quick-actions">
+          <button class="term-btn" onclick="executeTermCommand('stats')">$ stats</button>
+          <button class="term-btn" onclick="executeTermCommand('finops')">$ finops-rag</button>
+          <button class="term-btn" onclick="executeTermCommand('certs')">$ list-certs</button>
+          <button class="term-btn" onclick="executeTermCommand('clear')">$ clear</button>
+        </div>
+      </div>
     </div>
 
     <!-- Impact Stats Grid -->
     <div class="stats-grid" id="statsGrid">
-      <!-- Injected dynamically -->
+      <!-- Injected dynamically via JS -->
     </div>
   </section>
 
@@ -97,12 +139,27 @@
   <section id="projects" class="section container">
     <div class="section-header">
       <span class="section-badge">🚀 Portfolio Projects</span>
-      <h2 class="section-title">Automated Production & Open-Source Engineering</h2>
-      <p class="section-subtitle">Real-world data engineering pipelines, dynamic FinOps RAG evaluators, interactive engineering portfolios, and self-hosted homelab architectures.</p>
+      <h2 class="section-title">Automated Production & Open-Source Systems</h2>
+      <p class="section-subtitle">Real-world multi-cloud FinOps RAG evaluators, containerized homelab lakehouses, automated AI repo discovery bots, and responsive design systems.</p>
+    </div>
+
+    <!-- Filter & Search Controls -->
+    <div class="controls-bar">
+      <div class="filter-pills" id="projectFilters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="genai">GenAI & RAG</button>
+        <button class="filter-btn" data-filter="homelab">Homelab & Telemetry</button>
+        <button class="filter-btn" data-filter="web">Web & UI</button>
+      </div>
+
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="projectSearch" class="search-input" placeholder="Search projects by tech, keyword...">
+      </div>
     </div>
 
     <div class="projects-grid" id="projectsGrid">
-      <!-- Injected dynamically -->
+      <!-- Injected dynamically via JS -->
     </div>
   </section>
 
@@ -111,11 +168,11 @@
     <div class="section-header">
       <span class="section-badge">💼 Work Experience</span>
       <h2 class="section-title">Enterprise Track Record</h2>
-      <p class="section-subtitle">Leading cloud infrastructure, data engineering, GenAI architectures, and multi-cloud control planes for Deloitte, JPMorgan Chase, UBS, Virgin Media O2, and HSBC.</p>
+      <p class="section-subtitle">Architecting cloud infrastructure, data engineering pipelines, GenAI platforms, and multi-cloud control planes for Deloitte, JPMorgan Chase, UBS, Virgin Media O2, and HSBC.</p>
     </div>
 
     <div class="timeline" id="experienceTimeline">
-      <!-- Injected dynamically -->
+      <!-- Injected dynamically via JS -->
     </div>
   </section>
 
@@ -124,30 +181,94 @@
     <div class="section-header">
       <span class="section-badge">🛠️ Technical Competencies</span>
       <h2 class="section-title">Skills & Domain Expertise</h2>
+      <p class="section-subtitle">Technical stack across cloud platforms, data engineering, Generative AI, DevOps, databases, and security.</p>
     </div>
 
     <div class="skills-grid" id="skillsGrid">
-      <!-- Injected dynamically -->
+      <!-- Injected dynamically via JS -->
     </div>
   </section>
 
   <!-- Certifications Section -->
   <section id="certifications" class="section container">
     <div class="section-header">
-      <span class="section-badge">📜 Verified Credentials</span>
-      <h2 class="section-title">Cloud & AI Certifications (11 Verified)</h2>
-      <p class="section-subtitle">Credly verified credentials across Google Cloud Platform, Amazon Web Services, HashiCorp Terraform, Microsoft Azure, and Oracle Cloud.</p>
+      <span class="section-badge">📜 Credentials</span>
+      <h2 class="section-title">Cloud & AI Certifications</h2>
+      <p class="section-subtitle">Credentials across Google Cloud Platform, Amazon Web Services, HashiCorp Terraform, Microsoft Azure, and Oracle Cloud.</p>
+    </div>
+
+    <!-- Provider Filters -->
+    <div class="controls-bar" style="justify-content: center;">
+      <div class="filter-pills" id="certFilters">
+        <button class="filter-btn active" data-cert-filter="all">All Certifications</button>
+        <button class="filter-btn" data-cert-filter="google">Google Cloud</button>
+        <button class="filter-btn" data-cert-filter="aws">AWS</button>
+        <button class="filter-btn" data-cert-filter="hashicorp">HashiCorp</button>
+        <button class="filter-btn" data-cert-filter="azure">Microsoft Azure</button>
+        <button class="filter-btn" data-cert-filter="oracle">Oracle</button>
+      </div>
     </div>
 
     <div class="certs-grid" id="certsGrid">
-      <!-- Injected dynamically -->
+      <!-- Injected dynamically via JS -->
     </div>
 
     <div class="credly-banner">
-      <p>View all 11 verified digital badges and credentials on Credly:</p>
+      <p>View digital badges on Credly:</p>
       <a href="https://www.credly.com/users/siddharthsbhadauria/badges/credly" target="_blank" rel="noopener" class="btn btn-primary">
-        View Credly Badge Profile &rarr;
+        View Credly Profile &rarr;
       </a>
+    </div>
+  </section>
+
+  <!-- Contact Me Section (Terminal CLI Form & Web3Forms Integration) -->
+  <section id="contact" class="contact-section container">
+    <div class="section-header">
+      <span class="section-badge">✉️ Get In Touch</span>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-subtitle">Have a project, role, or collaboration in mind? Send a message directly to my inbox.</p>
+    </div>
+
+    <div class="cyber-terminal contact-terminal">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="terminal-title">siddharth@github:~/contact-form</span>
+        <span class="terminal-badge">READY</span>
+      </div>
+
+      <div class="terminal-form-body">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <!-- Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="2b5076e7-a7cf-45c2-bcb9-e798499cb5d3">
+          <input type="hidden" name="subject" value="New Portfolio Message from Siddharth Bhadauria Website">
+          <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName" class="form-label"><span class="term-prompt">siddharth@github:~$</span> input --name</label>
+              <input type="text" id="contactName" name="name" class="form-input term-input" placeholder="Alex Smith" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label"><span class="term-prompt">siddharth@github:~$</span> input --email</label>
+              <input type="email" id="contactEmail" name="email" class="form-input term-input" placeholder="name@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage" class="form-label"><span class="term-prompt">siddharth@github:~$</span> input --message</label>
+            <textarea id="contactMessage" name="message" class="form-textarea term-input" placeholder="How can I help you with your next cloud or AI platform?" required></textarea>
+          </div>
+
+          <button type="submit" id="contactSubmitBtn" class="btn btn-primary btn-submit term-submit">
+            $ execute send-message &rarr;
+          </button>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -162,13 +283,34 @@
       <div class="footer-links">
         <a href="https://github.com/siddharthsbhadauria" target="_blank" rel="noopener">GitHub</a>
         <a href="https://linkedin.com/in/siddharthsbhadauria" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.credly.com/users/siddharthsbhadauria/badges/credly" target="_blank" rel="noopener">Credly Badges</a>
+        <a href="https://www.credly.com/users/siddharthsbhadauria/badges/credly" target="_blank" rel="noopener">Credly Profile</a>
         <a href="mailto:siddharthsbhadauria@gmail.com">Contact Email</a>
       </div>
     </div>
   </footer>
 
-  <script src="data/portfolio_data.js?v=1.1.0"></script>
-  <script src="app.js?v=1.1.0"></script>
+  <!-- Project Detail Modal -->
+  <div id="projectModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modalBody">
+        <!-- Dynamically injected modal content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Feedback -->
+  <div id="toast" class="toast">
+    <span id="toastMessage">Action completed</span>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" class="back-to-top" title="Back to top" aria-label="Back to top">
+    &uarr;
+  </button>
+
+  <!-- Application JS Scripts -->
+  <script src="data/portfolio_data.js?v=9.0.0"></script>
+  <script src="app.js?v=9.0.0"></script>
 </body>
 </html>

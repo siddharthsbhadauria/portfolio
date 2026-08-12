@@ -1,7 +1,7 @@
 window.PORTFOLIO_DATA = {
   "profile": {
     "name": "Siddharth Singh Bhadauria",
-    "title": "Senior Cloud / Data / AI Engineer",
+    "title": "Senior Cloud, Data & AI Engineer",
     "location": "London, UK",
     "experience_years": "11.5+",
     "email": "siddharthsbhadauria@gmail.com",
@@ -9,20 +9,29 @@ window.PORTFOLIO_DATA = {
     "credly": "https://www.credly.com/users/siddharthsbhadauria/badges/credly",
     "github": "https://github.com/siddharthsbhadauria",
     "resume_url": "assets/Siddharth_Singh_Bhadauria_Resume.pdf",
-    "bio": "Senior Cloud, Data, and AI Engineer with over 11.5 years of experience architecting enterprise multi-cloud platforms, Generative AI infrastructure, and automated data pipelines across GCP, AWS, and Azure. Certified Google Professional ML & Data Engineer."
+    "bio": "Senior Cloud, Data, and AI Engineer with 11.5+ years of experience architecting enterprise multi-cloud platforms, Generative AI infrastructure, and automated data pipelines across GCP, AWS, and Azure. Certified Google Professional ML & Data Engineer."
   },
   "stats": [
     { "label": "Years Experience", "value": "11.5+" },
     { "label": "Enterprise Projects", "value": "14+" },
-    { "label": "Credly Certifications", "value": "11" },
+    { "label": "Certifications", "value": "11" },
     { "label": "Open-Source Repos", "value": "4" }
   ],
   "featured_projects": [
     {
       "id": "cloud-finops-rag",
+      "category": "genai",
       "title": "Cloud-FinOps-RAG",
       "tagline": "Autonomous Multi-Cloud AI Tokenomics & Price Benchmark Evaluator",
       "description": "Serverless data engineering pipeline built on GitHub Actions. Dynamically ingests tokenomics across 15+ LLM provider endpoints (Google Gemini, Anthropic Claude, OpenAI GPT-4.5/o3-mini, DeepSeek), validates schemas via Great Expectations, computes cost-per-intelligence ratios in DuckDB, and generates daily RAG executive summaries.",
+      "long_description": "Cloud-FinOps-RAG is an autonomous serverless benchmarking engine that continuously monitors LLM pricing, tokenomics, and performance ratios. Using automated GitHub Actions workflows, it queries live pricing APIs, executes schema validation gates via Great Expectations, stores structured analytical datasets in DuckDB, and generates daily RAG executive digests hosted directly on GitHub Pages.",
+      "architecture": [
+        "Automated daily GitHub Actions workflow execution",
+        "Multi-provider API ingestion for 15+ LLM models (Gemini, Claude, GPT, DeepSeek)",
+        "Great Expectations data contract and schema validation",
+        "Analytical aggregation using DuckDB in Python",
+        "Automated RAG synthesis & GitHub Pages deployment"
+      ],
       "tech": ["Python", "DuckDB", "Great Expectations", "RAG", "GitHub Actions", "GitHub Pages"],
       "live_url": "https://siddharthsbhadauria.github.io/cloud-finops-rag/",
       "github_url": "https://github.com/siddharthsbhadauria/cloud-finops-rag",
@@ -30,9 +39,18 @@ window.PORTFOLIO_DATA = {
     },
     {
       "id": "auto-datapulse",
+      "category": "homelab",
       "title": "Auto-DataPulse",
       "tagline": "UGREEN NAS Infrastructure Telemetry & Lakehouse Engine",
       "description": "Containerized homelab Lakehouse optimized for UGREEN NAS (32 GB RAM, Portainer). Ingests system metrics across 20+ containerized sensors, executes Great Expectations contract gates, models gold analytics via dbt-core + DuckDB, and automatically publishes daily infrastructure health logs to GitHub.",
+      "long_description": "Auto-DataPulse transforms a homelab server into an enterprise-grade analytics platform. Deployed on a UGREEN NAS under Docker/Portainer, it collects hardware and container telemetry from 20+ services, enforces strict data quality gates using Great Expectations, runs dbt analytical data models on DuckDB, and auto-commits structured markdown metrics to GitHub.",
+      "architecture": [
+        "Containerized sensors deployed on Portainer / UGREEN NAS",
+        "Sensor metric harvest & JSON telemetry pipeline",
+        "Great Expectations data contract validation",
+        "dbt-core SQL data modeling over DuckDB analytical storage",
+        "Automated Git sync & public health log publishing"
+      ],
       "tech": ["Docker", "Portainer", "DuckDB", "dbt Core", "Great Expectations", "Python 3.11"],
       "live_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
       "github_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
@@ -40,9 +58,17 @@ window.PORTFOLIO_DATA = {
     },
     {
       "id": "awesome-ai-discoveries",
+      "category": "genai",
       "title": "Awesome-AI-Discoveries",
       "tagline": "Automated AI GitHub Repository Aggregator & Web Directory",
       "description": "Autonomous GitHub Actions bot that continuously discovers, sanitizes, categorizes, and logs trending open-source AI, RAG, and MCP repositories. Includes a dark glassmorphism Web Directory with theme switcher and quick view modal.",
+      "long_description": "An autonomous AI discovery bot and web portal designed to filter noise from the open-source AI ecosystem. The automated Python bot queries GitHub REST APIs for trending repositories tagged under GenAI, RAG, LLM tooling, and Model Context Protocol (MCP), validates metadata, generates categorized Markdown digests, and presents them in an interactive glassmorphism Web Directory.",
+      "architecture": [
+        "Automated GitHub API scraper & repository categorization engine",
+        "Metadata validation, star velocity metrics & description sanitization",
+        "Automated Markdown index generation for GitHub",
+        "Interactive Vanilla JS + CSS glassmorphism Web Directory"
+      ],
       "tech": ["Python", "REST API", "GitHub Actions", "Vanilla JS", "Glassmorphism CSS"],
       "live_url": "https://siddharthsbhadauria.github.io/awesome-ai-discoveries/",
       "github_url": "https://github.com/siddharthsbhadauria/awesome-ai-discoveries",
@@ -50,9 +76,17 @@ window.PORTFOLIO_DATA = {
     },
     {
       "id": "portfolio",
+      "category": "web",
       "title": "Interactive Engineering Portfolio",
       "tagline": "Personal Interactive Engineering Portfolio & Live Showcase",
-      "description": "Responsive glassmorphism portfolio site showcasing enterprise architecture patterns, Credly verified badges, interactive project cards, and open-source contributions. Hosted on GitHub Pages.",
+      "description": "Responsive glassmorphism portfolio site showcasing enterprise architecture patterns, Credly digital badges, interactive project cards, and open-source contributions. Hosted on GitHub Pages.",
+      "long_description": "State-of-the-art developer showcase site designed with modern typography inspired by Claude and modern design systems. Features dynamic dual vibrant theme engine (Light & Dark mode), search & filter matrix, interactive modals, responsive glassmorphism aesthetic, and zero-dependency Vanilla JS architecture.",
+      "architecture": [
+        "Claude-inspired typography hierarchy using Instrument Sans & Plus Jakarta Sans",
+        "Vibrant CSS custom property design system supporting dark & light themes",
+        "Dynamic Vanilla JS client-side filtering, search, and state management",
+        "GitHub Pages automated deployment"
+      ],
       "tech": ["HTML5", "Vanilla CSS", "JavaScript", "GitHub Pages"],
       "live_url": "https://siddharthsbhadauria.github.io/portfolio/",
       "github_url": "https://github.com/siddharthsbhadauria/portfolio",
@@ -95,7 +129,7 @@ window.PORTFOLIO_DATA = {
     },
     {
       "company": "Deloitte (Internal: PairD GenAI Platform)",
-      "role": "Senior Consultant",
+      "role": "Senior Consultant - AI Platform Lead",
       "period": "London, UK | May 2024 - Aug 2024",
       "highlights": [
         "Co-engineered Deloitte's internal PairD Generative AI platform serving 75,000+ employees, handling 100,000+ daily queries across OpenAI GPT and Google Gemini models.",
@@ -105,7 +139,7 @@ window.PORTFOLIO_DATA = {
     },
     {
       "company": "Deloitte (Internal: GenAI LLM Evaluation)",
-      "role": "Senior Consultant",
+      "role": "Senior Consultant - LLM Benchmarking",
       "period": "London, UK | Apr 2024 - May 2024",
       "highlights": [
         "Built an automated LLM evaluation pipeline using Confident AI DeepEval to quantify model quality across 4 core metrics (Answer Relevancy, Contextual Accuracy, Completeness, Latency) for Mistral 7B, Llama 3, and Gemini 1.0 Pro on GCP Vertex AI.",
@@ -165,7 +199,7 @@ window.PORTFOLIO_DATA = {
         "Microsoft Azure",
         "Amazon Web Services (AWS)",
         "AWS EKS",
-        "Multi-Cloud Unified Control Plane (ATLAS 2.0)",
+        "Multi-Cloud Control Plane (ATLAS 2.0)",
         "GCP Cloud Asset Inventory (CAI)",
         "Log Routers & Sinks & Buckets",
         "GCS Object Lifecycle Management",
@@ -193,7 +227,7 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      "category": "AI Coding Tools",
+      "category": "AI Coding Tools & Velocity",
       "items": [
         "GitHub Copilot",
         "Claude Code",
@@ -242,60 +276,92 @@ window.PORTFOLIO_DATA = {
   ],
   "certifications": [
     {
+      "id": "gcp-ml-pro",
+      "provider": "google",
       "title": "Google Cloud Certified: Professional Machine Learning Engineer",
       "issuer": "Google Cloud",
-      "date": "2025 - 2027"
+      "date": "2025 - 2027",
+      "badge_color": "#4285F4"
     },
     {
+      "id": "gcp-de-pro",
+      "provider": "google",
       "title": "Google Cloud Certified: Professional Data Engineer",
       "issuer": "Google Cloud",
-      "date": "2025 - 2027"
+      "date": "2025 - 2027",
+      "badge_color": "#4285F4"
     },
     {
+      "id": "gcp-genai",
+      "provider": "google",
       "title": "Google Cloud Certified: Generative AI Leader",
       "issuer": "Google Cloud",
-      "date": "2026 - 2029"
+      "date": "2026 - 2029",
+      "badge_color": "#34A853"
     },
     {
+      "id": "gcp-data-practitioner",
+      "provider": "google",
       "title": "Google Cloud Certified: Associate Data Practitioner",
       "issuer": "Google Cloud",
-      "date": "2026 - 2029"
+      "date": "2026 - 2029",
+      "badge_color": "#EA4335"
     },
     {
+      "id": "gcp-cdl",
+      "provider": "google",
       "title": "Google Cloud Certified: Cloud Digital Leader",
       "issuer": "Google Cloud",
-      "date": "2024 - 2027"
+      "date": "2024 - 2027",
+      "badge_color": "#FBBC05"
     },
     {
+      "id": "aws-ai-practitioner",
+      "provider": "aws",
       "title": "AWS Certified AI Practitioner",
       "issuer": "Amazon Web Services",
-      "date": "2024 - 2027"
+      "date": "2024 - 2027",
+      "badge_color": "#FF9900"
     },
     {
+      "id": "hashicorp-tf",
+      "provider": "hashicorp",
       "title": "HashiCorp Certified: Terraform Associate (003)",
       "issuer": "HashiCorp",
-      "date": "2024 - 2026"
+      "date": "2024 - 2026",
+      "badge_color": "#844FBA"
     },
     {
+      "id": "aws-ccp",
+      "provider": "aws",
       "title": "AWS Certified Cloud Practitioner",
       "issuer": "Amazon Web Services",
-      "date": "2022 - 2028"
+      "date": "2022 - 2028",
+      "badge_color": "#FF9900"
     },
     {
+      "id": "azure-az900",
+      "provider": "azure",
       "title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
       "issuer": "Microsoft",
-      "date": "2024"
+      "date": "2024",
+      "badge_color": "#0089D6"
     },
     {
+      "id": "azure-dp900",
+      "provider": "azure",
       "title": "Microsoft Certified: Data Fundamentals (DP-900)",
       "issuer": "Microsoft",
-      "date": "2024"
+      "date": "2024",
+      "badge_color": "#0089D6"
     },
     {
+      "id": "oci-foundations",
+      "provider": "oracle",
       "title": "Oracle Cloud Infrastructure: Certified Foundations Associate",
       "issuer": "Oracle",
-      "date": "2024"
+      "date": "2024",
+      "badge_color": "#F80000"
     }
   ]
-}
-;
+};
