@@ -1544,25 +1544,104 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   16. Responsive Breakpoints
+   16. Responsive Breakpoints & Mobile Protections
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .hero-grid-layout { grid-template-columns: 1fr; gap: 32px; }
-  .hero-title { font-size: 38px; }
+  .hero-title { font-size: clamp(28px, 5vw, 38px); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .certs-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
+  body { overflow-x: hidden; width: 100%; }
+  .container { padding: 0 16px; }
+
+  /* Navbar Mobile Layout */
+  .navbar .nav-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+
   .nav-links { display: none; }
-  .hero-title { font-size: 28px; }
-  .hero-subtitle { font-size: 15px; }
-  .projects-grid, .skills-grid, .certs-grid { grid-template-columns: 1fr; }
+
+  .brand { gap: 8px; }
+  .brand-icon { width: 36px; height: 36px; }
+  .brand-title { font-size: 14px; white-space: nowrap; }
+  .brand-tag { font-size: 9px; white-space: nowrap; }
+
+  .nav-actions { gap: 6px; }
+  .btn-icon-theme { width: 36px; height: 36px; font-size: 14px; }
+  .status-badge { font-size: 10px; padding: 4px 10px; white-space: nowrap; }
+  .btn-github { padding: 8px 12px; font-size: 12px; }
+  .btn-github-text { display: none; }
+
+  /* Hero & Headings */
+  .hero-section { padding: 40px 16px 24px; }
+  .hero-title { font-size: clamp(24px, 6.5vw, 32px); line-height: 1.25; margin-bottom: 14px; word-break: break-word; }
+  .hero-subtitle { font-size: 14px; margin-bottom: 24px; }
+
+  .stats-grid { grid-template-columns: 1fr; gap: 12px; }
+  .stat-card { padding: 18px; }
+  .stat-number { font-size: 30px; }
+  .stat-label { font-size: 11px; }
+
+  /* Controls & Grids */
+  .projects-grid, .skills-grid, .certs-grid { grid-template-columns: 1fr; gap: 16px; }
+  .controls-bar { flex-direction: column; align-items: stretch; gap: 12px; }
+  .search-box { min-width: 100%; width: 100%; }
+
+  .categories-filter {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+    flex-wrap: nowrap;
+  }
+
+  .cat-btn { flex-shrink: 0; white-space: nowrap; font-size: 11px; padding: 6px 12px; }
+
+  /* Timeline Mobile */
   .timeline::before { left: 16px; }
-  .timeline-item { padding-left: 44px; }
-  .timeline-dot { left: 7px; }
-  .controls-bar { flex-direction: column; align-items: stretch; }
-  .search-box { min-width: 100%; }
-  .terminal-form-body { padding: 20px; }
-  .form-row { grid-template-columns: 1fr; }
+  .timeline-item { padding-left: 40px; margin-bottom: 24px; }
+  .timeline-dot { left: 7px; width: 18px; height: 18px; }
+
+  /* Terminal Contact Form */
+  .terminal-header { padding: 8px 12px; }
+  .terminal-title { font-size: 11px; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .terminal-form-body { padding: 16px; }
+  .form-row { grid-template-columns: 1fr; gap: 12px; }
+  .cli-input-wrapper { font-size: 12px; }
+
+  /* Modals & Floating Elements */
+  .modal-card { padding: 20px; max-width: 92vw; max-height: 85vh; overflow-y: auto; }
+  .modal-title { font-size: 20px; }
+  
+  .toast {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    font-size: 12px;
+    padding: 10px 16px;
+    text-align: center;
+  }
+
+  .back-to-top {
+    bottom: 16px;
+    left: 16px;
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .footer-content { flex-direction: column; text-align: center; gap: 16px; }
+  .footer-links { justify-content: center; flex-wrap: wrap; gap: 14px; }
 }
+
+@media (max-width: 480px) {
+  .brand-tag { display: none; }
+  .status-badge { font-size: 9px; padding: 3px 8px; }
+  .hero-badge { font-size: 10px; padding: 4px 12px; }
+}
+
