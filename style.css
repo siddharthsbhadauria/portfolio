@@ -1171,7 +1171,28 @@ p, h1, h2, h3, h4, h5, h6, span, a, li, td, th {
   background: var(--accent-cyan);
 }
 
-.cert-card-content { padding-left: 8px; }
+.cert-card-content {
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cert-badge-wrapper {
+  margin-bottom: 12px;
+}
+
+.cert-badge-img {
+  height: 64px;
+  width: 64px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+  transition: var(--transition);
+}
+
+.cert-card:hover .cert-badge-img {
+  transform: scale(1.08);
+}
 
 .cert-title {
   font-family: var(--font-heading);

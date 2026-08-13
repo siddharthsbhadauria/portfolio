@@ -296,6 +296,11 @@ function renderCertifications(certs) {
     <div class="cert-card" data-provider="${c.provider || 'other'}">
       <div class="cert-badge-accent" style="background: ${c.badge_color || 'var(--accent-cyan)'};"></div>
       <div class="cert-card-content">
+        ${c.badge_image ? `
+          <div class="cert-badge-wrapper">
+            <img src="${c.badge_image}" alt="${c.title} Badge" class="cert-badge-img" loading="lazy" />
+          </div>
+        ` : ''}
         <div class="cert-header">
           <h4 class="cert-title">${c.title}</h4>
         </div>

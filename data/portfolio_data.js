@@ -299,7 +299,8 @@ window.PORTFOLIO_DATA = {
       "title": "Google Cloud Certified: Professional Machine Learning Engineer",
       "issuer": "Google Cloud",
       "date": "2025 - 2027",
-      "badge_color": "#4285F4"
+      "badge_color": "#4285F4",
+      "badge_image": "assets/badges/professional-machine-learning-engineer-certificatio.png"
     },
     {
       "id": "gcp-de-pro",
@@ -307,7 +308,8 @@ window.PORTFOLIO_DATA = {
       "title": "Google Cloud Certified: Professional Data Engineer",
       "issuer": "Google Cloud",
       "date": "2025 - 2027",
-      "badge_color": "#4285F4"
+      "badge_color": "#4285F4",
+      "badge_image": "assets/badges/professional-data-engineer-certification.png"
     },
     {
       "id": "gcp-genai",
@@ -315,7 +317,8 @@ window.PORTFOLIO_DATA = {
       "title": "Google Cloud Certified: Generative AI Leader",
       "issuer": "Google Cloud",
       "date": "2026 - 2029",
-      "badge_color": "#34A853"
+      "badge_color": "#34A853",
+      "badge_image": "assets/badges/generative-ai-leader-certification.png"
     },
     {
       "id": "gcp-data-practitioner",
@@ -323,7 +326,8 @@ window.PORTFOLIO_DATA = {
       "title": "Google Cloud Certified: Associate Data Practitioner",
       "issuer": "Google Cloud",
       "date": "2026 - 2029",
-      "badge_color": "#EA4335"
+      "badge_color": "#EA4335",
+      "badge_image": "assets/badges/associate-data-practitioner-certification.png"
     },
     {
       "id": "gcp-cdl",
@@ -331,7 +335,8 @@ window.PORTFOLIO_DATA = {
       "title": "Google Cloud Certified: Cloud Digital Leader",
       "issuer": "Google Cloud",
       "date": "2024 - 2027",
-      "badge_color": "#FBBC05"
+      "badge_color": "#FBBC05",
+      "badge_image": "assets/badges/cloud-digital-leader-certification.png"
     },
     {
       "id": "aws-ai-practitioner",
@@ -339,7 +344,8 @@ window.PORTFOLIO_DATA = {
       "title": "AWS Certified AI Practitioner",
       "issuer": "Amazon Web Services",
       "date": "2024 - 2027",
-      "badge_color": "#FF9900"
+      "badge_color": "#FF9900",
+      "badge_image": "assets/badges/aws-certified-ai-practitioner.png"
     },
     {
       "id": "hashicorp-tf",
@@ -347,7 +353,8 @@ window.PORTFOLIO_DATA = {
       "title": "HashiCorp Certified: Terraform Associate (003)",
       "issuer": "HashiCorp",
       "date": "2024 - 2026",
-      "badge_color": "#844FBA"
+      "badge_color": "#844FBA",
+      "badge_image": "assets/badges/hashicorp-certified-terraform-associate-003.png"
     },
     {
       "id": "aws-ccp",
@@ -355,7 +362,8 @@ window.PORTFOLIO_DATA = {
       "title": "AWS Certified Cloud Practitioner",
       "issuer": "Amazon Web Services",
       "date": "2022 - 2028",
-      "badge_color": "#FF9900"
+      "badge_color": "#FF9900",
+      "badge_image": "assets/badges/aws-certified-cloud-practitioner.png"
     },
     {
       "id": "azure-az900",
