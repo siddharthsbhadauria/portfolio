@@ -15,9 +15,28 @@ window.PORTFOLIO_DATA = {
     { "label": "Years Experience", "value": "11.5+" },
     { "label": "Enterprise Projects", "value": "14+" },
     { "label": "Certifications", "value": "11" },
-    { "label": "Open-Source Repos", "value": "5" }
+    { "label": "Open-Source Repos", "value": "6" }
   ],
   "featured_projects": [
+    {
+      "id": "homelab-mlops",
+      "category": "homelab",
+      "title": "Homelab-MLOps",
+      "tagline": "Autonomous Telemetry Anomaly Detection & Model Governance Platform",
+      "description": "Self-hosted MLOps platform on UGREEN NAS (32 GB RAM, Docker/Portainer). Ingests auto-datapulse DuckDB telemetry, executes 18-dimension sliding-window feature engineering, benchmarks scikit-learn Isolation Forest & LOF with MLflow tracking, serves sub-10ms FastAPI inferences with Prometheus metrics, and dispatches automated GitHub Issues incident alerts.",
+      "long_description": "Homelab-MLOps is an end-to-end telemetry anomaly detection and model governance engine built for self-hosted homelab infrastructure. Consuming raw telemetry snapshots from auto-datapulse's DuckDB store, it extracts rolling window aggregations and rates of change, trains benchmarked anomaly models, tracks hyperparameter runs in MLflow, serves real-time predictions via FastAPI, and monitors latency and anomaly scores through Prometheus and Grafana dashboards.",
+      "architecture": [
+        "DuckDB OLAP feature store with SQL sliding-window transformations (18 features)",
+        "Automated multi-model training & benchmarking (IsolationForest vs LOF)",
+        "MLflow experiment tracking, artifact registry & metric curves",
+        "Sub-10ms async FastAPI inference engine with Prometheus observability",
+        "Automated GitHub Issues alerting & daily metric commits via REST API"
+      ],
+      "tech": ["DuckDB", "scikit-learn", "MLflow", "FastAPI", "Prometheus", "Grafana", "Docker Compose", "Portainer"],
+      "live_url": "https://siddharthsbhadauria.github.io/homelab-mlops/",
+      "github_url": "https://github.com/siddharthsbhadauria/homelab-mlops",
+      "badge": "Self-Hosted MLOps"
+    },
     {
       "id": "tf-cost-governor",
       "category": "homelab",

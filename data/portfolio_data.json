@@ -15,9 +15,29 @@
     { "label": "Years Experience", "value": "11.5+" },
     { "label": "Enterprise Projects", "value": "14+" },
     { "label": "Credly Certifications", "value": "11" },
-    { "label": "Open-Source Repos", "value": "4" }
+    { "label": "Open-Source Repos", "value": "6" }
   ],
   "featured_projects": [
+    {
+      "id": "homelab-mlops",
+      "title": "Homelab-MLOps",
+      "tagline": "Autonomous Telemetry Anomaly Detection & Model Governance Platform",
+      "description": "Self-hosted MLOps platform on UGREEN NAS (32 GB RAM, Docker/Portainer). Ingests auto-datapulse DuckDB telemetry, executes 18-dimension sliding-window feature engineering, benchmarks scikit-learn Isolation Forest & LOF with MLflow tracking, serves sub-10ms FastAPI inferences with Prometheus metrics, and dispatches automated GitHub Issues incident alerts.",
+      "tech": ["DuckDB", "scikit-learn", "MLflow", "FastAPI", "Prometheus", "Grafana", "Docker Compose", "Portainer"],
+      "live_url": "https://siddharthsbhadauria.github.io/homelab-mlops/",
+      "github_url": "https://github.com/siddharthsbhadauria/homelab-mlops",
+      "badge": "Self-Hosted MLOps"
+    },
+    {
+      "id": "tf-cost-governor",
+      "title": "TF-Cost-Governor",
+      "tagline": "Automated Multi-Cloud Terraform FinOps & Security Advisory Engine",
+      "description": "Serverless IaC governance engine built on GitHub Actions. Parses multi-cloud Terraform blueprints across AWS EKS, GCP Vertex AI, and Azure AKS, evaluates cost benchmarks & Policy-as-Code rules via DuckDB and Checkov, and deploys a live JetBrains Mono digital advisory dashboard.",
+      "tech": ["Terraform", "DuckDB", "Python 3.11", "GitHub Actions", "Checkov", "GitHub Pages"],
+      "live_url": "https://siddharthsbhadauria.github.io/tf-cost-governor/",
+      "github_url": "https://github.com/siddharthsbhadauria/tf-cost-governor",
+      "badge": "Automated IaC Engine"
+    },
     {
       "id": "cloud-finops-rag",
       "title": "Cloud-FinOps-RAG",
