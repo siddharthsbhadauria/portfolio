@@ -44,7 +44,7 @@ function initTerminal() {
 
   const defaultLogs = [
     { type: 'cmd', text: 'init --profile "Siddharth Singh Bhadauria"' },
-    { type: 'success', text: '[OK] Role: Senior Cloud, Data & AI Engineer (11.5+ yrs exp)' },
+    { type: 'success', text: '[OK] Role: Senior Cloud, Data & AI Engineer (12+ yrs exp)' },
     { type: 'info', text: '[OK] Certifications: 11 Digital Credentials (GCP, AWS, Terraform, Azure)' },
     { type: 'amber', text: '[READY] Location: London, UK | Open for Senior Cloud & AI Roles' },
     { type: 'cmd', text: 'Click quick command buttons below to execute diagnostics...' }
@@ -86,7 +86,7 @@ window.executeTermCommand = function(cmdKey) {
   if (cmdKey === 'stats') {
     newLogs = [
       { type: 'cmd', text: 'fetch --metrics --summary' },
-      { type: 'success', text: '-> 11.5+ Years Multi-Cloud Architecture Experience' },
+      { type: 'success', text: '-> 12+ Years Multi-Cloud Architecture Experience' },
       { type: 'success', text: '-> 14+ Enterprise Projects (Deloitte, JPMorgan, UBS, HSBC)' },
       { type: 'success', text: '-> 50M+ Daily Telemetry Log Ingestion Events to BigQuery' },
       { type: 'success', text: '-> 3,600+ Active Terraform AWS EKS Cluster Deployments' }

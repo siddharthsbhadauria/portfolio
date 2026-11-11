@@ -6,7 +6,7 @@
 > 🌐 **Live Netlify Web App**: [https://siddharthsbhadauria.netlify.app/](https://siddharthsbhadauria.netlify.app/)  
 > 🌐 **GitHub Pages Mirror**: [https://siddharthsbhadauria.github.io/portfolio/](https://siddharthsbhadauria.github.io/portfolio/)
 
-Welcome to my personal developer portfolio showcasing **11.5+ years of experience** in Senior Cloud Engineering, Data Engineering, and Generative AI Architectures across **GCP, AWS, and Azure**.
+Welcome to my personal developer portfolio showcasing **12+ years of experience** in Senior Cloud Engineering, Data Engineering and Generative AI Architectures across **GCP, AWS and Azure**.
 
 ---
 
