@@ -3,27 +3,48 @@
     "name": "Siddharth Singh Bhadauria",
     "title": "Senior Cloud / Data / AI Engineer",
     "location": "London, UK",
-    "experience_years": "11.5+",
+    "experience_years": "12+",
     "email": "siddharthsbhadauria@gmail.com",
     "linkedin": "https://linkedin.com/in/siddharthsbhadauria",
     "credly": "https://www.credly.com/users/siddharthsbhadauria/badges/credly",
     "github": "https://github.com/siddharthsbhadauria",
     "resume_url": "assets/Siddharth_Singh_Bhadauria_Resume.pdf",
-    "bio": "Senior Cloud, Data, and AI Engineer with over 11.5 years of experience architecting enterprise multi-cloud platforms, Generative AI infrastructure, and automated data pipelines across GCP, AWS, and Azure. Certified Google Professional ML & Data Engineer."
+    "bio": "Senior Cloud, Data and AI Engineer with over 12 years of experience architecting enterprise multi-cloud platforms, Generative AI infrastructure and automated data pipelines across GCP, AWS and Azure. Certified Google Professional ML & Data Engineer."
   },
   "stats": [
-    { "label": "Years Experience", "value": "11.5+" },
-    { "label": "Enterprise Projects", "value": "14+" },
-    { "label": "Credly Certifications", "value": "11" },
-    { "label": "Open-Source Repos", "value": "6" }
+    {
+      "label": "Years Experience",
+      "value": "12+"
+    },
+    {
+      "label": "Enterprise Projects",
+      "value": "14+"
+    },
+    {
+      "label": "Credly Certifications",
+      "value": "11"
+    },
+    {
+      "label": "Open-Source Repos",
+      "value": "6"
+    }
   ],
   "featured_projects": [
     {
       "id": "homelab-mlops",
       "title": "Homelab-MLOps",
       "tagline": "Autonomous Telemetry Anomaly Detection & Model Governance Platform",
-      "description": "Self-hosted MLOps platform on UGREEN NAS (32 GB RAM, Docker/Portainer). Ingests auto-datapulse DuckDB telemetry, executes 18-dimension sliding-window feature engineering, benchmarks scikit-learn Isolation Forest & LOF with MLflow tracking, serves sub-10ms FastAPI inferences with Prometheus metrics, and dispatches automated GitHub Issues incident alerts.",
-      "tech": ["DuckDB", "scikit-learn", "MLflow", "FastAPI", "Prometheus", "Grafana", "Docker Compose", "Portainer"],
+      "description": "Self-hosted MLOps platform on UGREEN NAS (32 GB RAM, Docker/Portainer). Ingests auto-datapulse DuckDB telemetry, executes 18-dimension sliding-window feature engineering, benchmarks scikit-learn Isolation Forest & LOF with MLflow tracking, serves sub-10ms FastAPI inferences with Prometheus metrics and dispatches automated GitHub Issues incident alerts.",
+      "tech": [
+        "DuckDB",
+        "scikit-learn",
+        "MLflow",
+        "FastAPI",
+        "Prometheus",
+        "Grafana",
+        "Docker Compose",
+        "Portainer"
+      ],
       "live_url": "https://siddharthsbhadauria.github.io/homelab-mlops/",
       "github_url": "https://github.com/siddharthsbhadauria/homelab-mlops",
       "badge": "Self-Hosted MLOps"
@@ -32,8 +53,15 @@
       "id": "tf-cost-governor",
       "title": "TF-Cost-Governor",
       "tagline": "Automated Multi-Cloud Terraform FinOps & Security Advisory Engine",
-      "description": "Serverless IaC governance engine built on GitHub Actions. Parses multi-cloud Terraform blueprints across AWS EKS, GCP Vertex AI, and Azure AKS, evaluates cost benchmarks & Policy-as-Code rules via DuckDB and Checkov, and deploys a live JetBrains Mono digital advisory dashboard.",
-      "tech": ["Terraform", "DuckDB", "Python 3.11", "GitHub Actions", "Checkov", "GitHub Pages"],
+      "description": "Serverless IaC governance engine built on GitHub Actions. Parses multi-cloud Terraform blueprints across AWS EKS, GCP Vertex AI and Azure AKS, evaluates cost benchmarks & Policy-as-Code rules via DuckDB and Checkov and deploys a live JetBrains Mono digital advisory dashboard.",
+      "tech": [
+        "Terraform",
+        "DuckDB",
+        "Python 3.11",
+        "GitHub Actions",
+        "Checkov",
+        "GitHub Pages"
+      ],
       "live_url": "https://siddharthsbhadauria.github.io/tf-cost-governor/",
       "github_url": "https://github.com/siddharthsbhadauria/tf-cost-governor",
       "badge": "Automated IaC Engine"
@@ -42,8 +70,15 @@
       "id": "cloud-finops-rag",
       "title": "Cloud-FinOps-RAG",
       "tagline": "Autonomous Multi-Cloud AI Tokenomics & Price Benchmark Evaluator",
-      "description": "Serverless data engineering pipeline built on GitHub Actions. Dynamically ingests tokenomics across 15+ LLM provider endpoints (Google Gemini, Anthropic Claude, OpenAI GPT-4.5/o3-mini, DeepSeek), validates schemas via Great Expectations, computes cost-per-intelligence ratios in DuckDB, and generates daily RAG executive summaries.",
-      "tech": ["Python", "DuckDB", "Great Expectations", "RAG", "GitHub Actions", "GitHub Pages"],
+      "description": "Serverless data engineering pipeline built on GitHub Actions. Dynamically ingests tokenomics across 15+ LLM provider endpoints (Google Gemini, Anthropic Claude, OpenAI GPT-4.5/o3-mini, DeepSeek), validates schemas via Great Expectations, computes cost-per-intelligence ratios in DuckDB and generates daily RAG executive summaries.",
+      "tech": [
+        "Python",
+        "DuckDB",
+        "Great Expectations",
+        "RAG",
+        "GitHub Actions",
+        "GitHub Pages"
+      ],
       "live_url": "https://siddharthsbhadauria.github.io/cloud-finops-rag/",
       "github_url": "https://github.com/siddharthsbhadauria/cloud-finops-rag",
       "badge": "Serverless Cloud-Native"
@@ -52,8 +87,15 @@
       "id": "auto-datapulse",
       "title": "Auto-DataPulse",
       "tagline": "UGREEN NAS Infrastructure Telemetry & Lakehouse Engine",
-      "description": "Containerized homelab Lakehouse optimized for UGREEN NAS (32 GB RAM, Portainer). Ingests system metrics across 20+ containerized sensors, executes Great Expectations contract gates, models gold analytics via dbt-core + DuckDB, and automatically publishes daily infrastructure health logs to GitHub.",
-      "tech": ["Docker", "Portainer", "DuckDB", "dbt Core", "Great Expectations", "Python 3.11"],
+      "description": "Containerized homelab Lakehouse optimized for UGREEN NAS (32 GB RAM, Portainer). Ingests system metrics across 20+ containerized sensors, executes Great Expectations contract gates, models gold analytics via dbt-core + DuckDB and automatically publishes daily infrastructure health logs to GitHub.",
+      "tech": [
+        "Docker",
+        "Portainer",
+        "DuckDB",
+        "dbt Core",
+        "Great Expectations",
+        "Python 3.11"
+      ],
       "live_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
       "github_url": "https://github.com/siddharthsbhadauria/auto-datapulse",
       "badge": "Self-Hosted Homelab"
@@ -62,8 +104,14 @@
       "id": "awesome-ai-discoveries",
       "title": "Awesome-AI-Discoveries",
       "tagline": "Automated AI GitHub Repository Aggregator & Web Directory",
-      "description": "Autonomous GitHub Actions bot that continuously discovers, sanitizes, categorizes, and logs trending open-source AI, RAG, and MCP repositories. Includes a dark glassmorphism Web Directory with theme switcher and quick view modal.",
-      "tech": ["Python", "REST API", "GitHub Actions", "Vanilla JS", "Glassmorphism CSS"],
+      "description": "Autonomous GitHub Actions bot that continuously discovers, sanitizes, categorizes and logs trending open-source AI, RAG and MCP repositories. Includes a dark glassmorphism Web Directory with theme switcher and quick view modal.",
+      "tech": [
+        "Python",
+        "REST API",
+        "GitHub Actions",
+        "Vanilla JS",
+        "Glassmorphism CSS"
+      ],
       "live_url": "https://siddharthsbhadauria.github.io/awesome-ai-discoveries/",
       "github_url": "https://github.com/siddharthsbhadauria/awesome-ai-discoveries",
       "badge": "Automated Bot"
@@ -72,8 +120,13 @@
       "id": "portfolio",
       "title": "Interactive Engineering Portfolio",
       "tagline": "Personal Interactive Engineering Portfolio & Live Showcase",
-      "description": "Responsive glassmorphism portfolio site showcasing enterprise architecture patterns, Credly verified badges, interactive project cards, and open-source contributions. Hosted on GitHub Pages.",
-      "tech": ["HTML5", "Vanilla CSS", "JavaScript", "GitHub Pages"],
+      "description": "Responsive glassmorphism portfolio site showcasing enterprise architecture patterns, Credly verified badges, interactive project cards and open-source contributions. Hosted on GitHub Pages.",
+      "tech": [
+        "HTML5",
+        "Vanilla CSS",
+        "JavaScript",
+        "GitHub Pages"
+      ],
       "live_url": "https://siddharthsbhadauria.github.io/portfolio/",
       "github_url": "https://github.com/siddharthsbhadauria/portfolio",
       "badge": "Portfolio Site"
@@ -85,13 +138,13 @@
       "role": "Senior Cloud Infrastructure & Observability Engineer",
       "period": "London, UK | June 2026 - Present",
       "highlights": [
-        "Architected and implemented the GCP observability, logging, and asset inventory module within JPMorgan Chase's ATLAS 2.0 Multi-Cloud Unified Control Plane platform.",
-        "Configured GCP observability telemetry workflows, establishing Log Buckets, Log Routers, and Log Sinks to stream over 50M+ daily log events to BigQuery and Pub/Sub with sub-second ingestion latency.",
-        "Configured Kafka Connect Source Connectors to stream log events from GCP Pub/Sub to enterprise Databus streams for downstream log distribution.",
-        "Configured Google Cloud Storage Object Lifecycle Management rules on log buckets to automatically transition telemetry objects from hot tier storage to archive tier (Nearline, Coldline, Archive), optimizing retention costs.",
-        "Enforced banking security compliance by securing GCP Logging Buckets with Customer-Managed Encryption Keys (CMEK) via Cloud KMS.",
-        "Created BigQuery Linked Datasets directly connected to GCP Logging Buckets, reducing log storage overhead by 40% while enabling real-time SQL analysis without data duplication.",
-        "Built automated asset inventory tracking pipelines utilizing Cloud Asset Inventory (CAI), Cloud Functions, and Cloud Scheduler for 10,000+ cloud resources."
+        "Built organisation-wide log routing pipelines in Terraform across audit, network flow and platform telemetry, fanning out organisation-level sinks into 16 Pub/Sub topics for streaming to SIEM and Kafka Databus.",
+        "Cut long-term log storage costs by ~94% using GCS lifecycle policies that move data to Archive tier after 90 days and enforce deletion at 540 days.",
+        "Standardised Cloud KMS HSM encryption keys (CMEK) with 30-day rotation across all storage and streaming services (GCS, Cloud Logging, BigQuery and Pub/Sub).",
+        "Designed an active/standby two-region asset inventory export pipeline running 12 scheduled batch jobs daily on Cloud Run v2 and Cloud Functions Gen2, maintaining a 2-hour data freshness target.",
+        "Migrated the export service to Cloud Run v2 with zero downtime using container digest validation, Direct VPC Egress and keyless Workload Identity Federation.",
+        "Built an alert transport pipeline routing Cloud Monitoring alerts to Kafka and ServiceNow via Pub/Sub and time-partitioned GCS storage, keeping delivery delay under 60 seconds.",
+        "Shipped 190+ production pull requests across 3 infrastructure repositories in 7 months, using environment-agnostic Terraform blueprints, automated BDD test suites and pipeline monitoring."
       ]
     },
     {
@@ -107,7 +160,7 @@
       "role": "Senior Consultant & DevOps Engineer",
       "period": "London, UK | Aug 2024 - Sept 2025",
       "highlights": [
-        "Created, managed, and continuously improved a Terraform AWS EKS cluster module alongside a Stack microservices blueprint for JPMorgan Chase, reducing provisioning time by 65%.",
+        "Created, managed and continuously improved a Terraform AWS EKS cluster module alongside a Stack microservices blueprint for JPMorgan Chase, reducing provisioning time by 65%.",
         "Scaled EKS Cluster module to over 3,600+ active deployments supporting 700+ microservices applications across 20+ Lines of Business (LoBs) across the bank.",
         "Evolved EKS cluster module into a multi-tenant deployment model and managed zero-downtime Kubernetes version upgrades (v1.19 through v1.34) supporting 50+ Production releases.",
         "Built automated testing and acceptance test suites using Python and Go to validate module enhancements on EKS clusters."
@@ -128,7 +181,7 @@
       "role": "Senior Consultant",
       "period": "London, UK | Apr 2024 - May 2024",
       "highlights": [
-        "Built an automated LLM evaluation pipeline using Confident AI DeepEval to quantify model quality across 4 core metrics (Answer Relevancy, Contextual Accuracy, Completeness, Latency) for Mistral 7B, Llama 3, and Gemini 1.0 Pro on GCP Vertex AI.",
+        "Built an automated LLM evaluation pipeline using Confident AI DeepEval to quantify model quality across 4 core metrics (Answer Relevancy, Contextual Accuracy, Completeness, Latency) for Mistral 7B, Llama 3 and Gemini 1.0 Pro on GCP Vertex AI.",
         "Authored Python automation scripts to harvest and visualize metrics, reducing benchmarking cycle time from 2 weeks to under 4 hours."
       ]
     },
@@ -138,7 +191,7 @@
       "period": "London, UK | Dec 2023 - Mar 2024",
       "highlights": [
         "Designed data processing architecture for 10TB+ of GPG-encrypted datasets with 100% file integrity validation.",
-        "Engineered Python scripts for PII detection and masking across 1,000+ database columns using Fernet cryptography, Azure Blob Storage, Azure Cosmos DB, and Azure Key Vault."
+        "Engineered Python scripts for PII detection and masking across 1,000+ database columns using Fernet cryptography, Azure Blob Storage, Azure Cosmos DB and Azure Key Vault."
       ]
     },
     {
@@ -147,7 +200,7 @@
       "period": "London, UK | Jul 2023 - Aug 2023",
       "highlights": [
         "Developed data migration and archival pipelines moving legacy Credit Suisse applications and trade data into UBS Azure cloud infrastructure across 1,000+ core systems.",
-        "Built Python-backed Azure Functions and Azure Data Factory (ADF) pipelines, accelerating ingestion throughput by 3x from PostgreSQL, Sybase, and Oracle databases."
+        "Built Python-backed Azure Functions and Azure Data Factory (ADF) pipelines, accelerating ingestion throughput by 3x from PostgreSQL, Sybase and Oracle databases."
       ]
     },
     {
@@ -155,8 +208,8 @@
       "role": "Senior Cloud Data Engineer",
       "period": "London, UK | Jul 2022 - Apr 2023",
       "highlights": [
-        "Architected cloud ingestion framework for 40,000+ employee HR records from Oracle HCM, Workday, and SuccessFactors into GCP BigQuery.",
-        "Enforced data security through GPG encryption, role-based access controls, and automated key rotation shell scripts, reducing overhead by 80%."
+        "Architected cloud ingestion framework for 40,000+ employee HR records from Oracle HCM, Workday and SuccessFactors into GCP BigQuery.",
+        "Enforced data security through GPG encryption, role-based access controls and automated key rotation shell scripts, reducing overhead by 80%."
       ]
     },
     {
@@ -164,7 +217,7 @@
       "role": "Data Engineer",
       "period": "London, UK | Mar 2021 - May 2021",
       "highlights": [
-        "Engineered data quality scoring platform on Azure for 35M+ vehicle insurance records across MID, CUE, and MIAFTR databases using Terraform, ADF, Azure SQL, and IICS."
+        "Engineered data quality scoring platform on Azure for 35M+ vehicle insurance records across MID, CUE and MIAFTR databases using Terraform, ADF, Azure SQL and IICS."
       ]
     },
     {
@@ -172,7 +225,7 @@
       "role": "Senior Cloud & Data Engineer",
       "period": "London, UK / Pune, India | Jan 2015 - Nov 2021",
       "highlights": [
-        "Executed AWS to GCP migration proof-of-concept for CESOP financial payment reporting using Terraform, DataProc, and Cloud Functions.",
+        "Executed AWS to GCP migration proof-of-concept for CESOP financial payment reporting using Terraform, DataProc and Cloud Functions.",
         "Engineered near-real-time streaming processing 10M+ daily messages from Apache Kafka to BigQuery via GCS using Apache NiFi and Kafka Connect."
       ]
     }
@@ -185,7 +238,7 @@
         "Microsoft Azure",
         "Amazon Web Services (AWS)",
         "AWS EKS",
-        "Multi-Cloud Unified Control Plane (ATLAS 2.0)",
+        "Multi-Cloud Unified Control Plane Architecture",
         "GCP Cloud Asset Inventory (CAI)",
         "Log Routers & Sinks & Buckets",
         "GCS Object Lifecycle Management",
