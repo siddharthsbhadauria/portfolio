@@ -839,7 +839,7 @@ button.node:hover { border-color: var(--accent); color: var(--accent); }
 
   .project { grid-template-columns: minmax(0, 1fr); }
   .project::before { padding-top: 0; }
-  .project-links { flex-direction: row; align-items: center; gap: 20px; padding-top: 10px; }
+  .project-links { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 10px 20px; padding-top: 10px; }
 
   /* System map: single column, arrows all point down. */
   .flow { grid-template-columns: minmax(0, 1fr); gap: 28px; }
@@ -1003,7 +1003,9 @@ button.node:hover { border-color: var(--accent); color: var(--accent); }
 .outcomes { background: var(--band-bg); color: var(--band-ink); }
 
 /* Keep "Senior Cloud, Data" on one line at desktop widths */
-.hero-grid { grid-template-columns: minmax(0, 2.3fr) minmax(0, 1fr); }
+@media (min-width: 861px) {
+  .hero-grid { grid-template-columns: minmax(0, 2.3fr) minmax(0, 1fr); }
+}
 .hero-title { font-size: clamp(44px, 6vw, 78px); text-wrap: wrap; }
 
 /* ==========================================================================
