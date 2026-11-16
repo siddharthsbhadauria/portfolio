@@ -35,10 +35,10 @@ window.PORTFOLIO_DATA = {
       "category": "homelab",
       "title": "Homelab ML pipeline",
       "badge": "Self-hosted · two repos",
-      "summary": "Telemetry to alert, end to end on a home NAS. auto-datapulse collects host and container metrics every 15 minutes and models them with dbt on DuckDB; homelab-mlops builds 18 sliding-window features, trains Isolation Forest and LOF with MLflow tracking, serves scores from FastAPI in under 10 ms and opens GitHub Issues on anomalies.",
-      "long_description": "Two services that share one DuckDB file on a UGREEN NAS. auto-datapulse is the data side: it collects hardware and container telemetry every 15 minutes, checks each batch against Great Expectations contracts and builds dbt models on DuckDB. homelab-mlops is the ML side: it reads that store, engineers sliding-window features in SQL, benchmarks anomaly models in MLflow, serves real-time scores through FastAPI with Prometheus metrics and Grafana dashboards, and raises incidents as GitHub Issues.",
+      "summary": "Telemetry to alert, end to end on a home NAS. auto-datapulse collects host and disk metrics every 15 minutes and models them with dbt on DuckDB; homelab-mlops builds 18 sliding-window features, trains Isolation Forest and LOF with MLflow tracking, serves scores from FastAPI in under 10 ms and opens GitHub Issues on anomalies.",
+      "long_description": "Two services that share one DuckDB file on a UGREEN NAS. auto-datapulse is the data side: it collects host and disk telemetry every 15 minutes, checks each batch against a data contract and builds dbt models on DuckDB. homelab-mlops is the ML side: it reads that store, engineers sliding-window features in SQL, benchmarks anomaly models in MLflow, serves real-time scores through FastAPI with Prometheus metrics and Grafana dashboards, and raises incidents as GitHub Issues.",
       "architecture": [
-        "auto-datapulse: 15-minute collection, Great Expectations contract gates, dbt Core models on DuckDB",
+        "auto-datapulse: 15-minute collection, data-contract checks, dbt Core models on DuckDB",
         "homelab-mlops: 18 sliding-window features computed in DuckDB SQL",
         "Isolation Forest vs LOF benchmarked and tracked in MLflow",
         "FastAPI inference under 10 ms, Prometheus metrics, Grafana dashboards",
@@ -48,7 +48,6 @@ window.PORTFOLIO_DATA = {
       "tech": [
         "DuckDB",
         "dbt Core",
-        "Great Expectations",
         "scikit-learn",
         "MLflow",
         "FastAPI",
@@ -123,6 +122,32 @@ window.PORTFOLIO_DATA = {
       "badge": "Runs daily",
       "summary": "Estimated monthly cost and security guardrails for multi-cloud Terraform (AWS, GCP, Azure), totalled in DuckDB and refreshed daily on GitHub Actions.",
       "cadence": "runs daily"
+    },
+    {
+      "id": "awesome-ai-discoveries",
+      "category": "genai",
+      "title": "Awesome-AI-Discoveries",
+      "tagline": "A running log of open-source AI repos",
+      "description": "Python bot on GitHub Actions that searches GitHub three times a day for agent, RAG and MCP repositories and logs one new find per run to a searchable directory.",
+      "long_description": "Three times a day a small Python bot runs eight GitHub search queries by topic with a star floor (for example topic:rag stars:>500), sorted by most recently updated. It skips anything already logged, adds the first new repo to the README and a JSON file, and a Pages deploy turns that into a directory with the latest finds, a breakdown by topic and a filterable table. 270+ repos so far.",
+      "architecture": [
+        "GitHub Actions cron at 00:00, 08:00 and 16:00 UTC",
+        "Eight GitHub search API queries by topic with star floors",
+        "One new repo per run, de-duplicated against the log",
+        "Keyword-based topic categories",
+        "Static directory on GitHub Pages with search and filters"
+      ],
+      "tech": [
+        "Python",
+        "GitHub API",
+        "GitHub Actions",
+        "GitHub Pages"
+      ],
+      "summary": "Bot that logs a new open-source agent, RAG or MCP repo three times a day. 270+ repos, searchable by topic and language.",
+      "cadence": "runs 3× daily",
+      "live_url": "https://siddharthsbhadauria.github.io/awesome-ai-discoveries/",
+      "github_url": "https://github.com/siddharthsbhadauria/awesome-ai-discoveries",
+      "badge": "Runs 3× daily"
     }
   ],
   "experience": [

@@ -98,7 +98,7 @@ const repoLinks = (p, label) => (p.repos || [{ name: label, url: p.github_url }]
   .map((r) => `<a href="${esc(r.url)}" rel="noopener">${esc(p.repos ? r.name : label)} ↗</a>`).join('');
 
 const liveLink = (p, label) => (SHOW_LIVE_LINKS && p.live_url)
-  ? `<a href="${esc(p.live_url)}" rel="noopener">${label} ↗</a>` : '';
+  ? `<a class="live-link" href="${esc(p.live_url)}" rel="noopener">${label} ↗</a>` : '';
 
 function renderProjects(projects) {
   const list = document.getElementById('projects-list');
@@ -111,7 +111,7 @@ function renderProjects(projects) {
       </div>
       <div class="project-links">
         ${p.cadence ? `<span class="cadence">${esc(p.cadence)}</span>` : ''}
-        ${liveLink(p, 'Live site')}
+        ${liveLink(p, 'Live dashboard')}
         ${repoLinks(p, 'Source')}
       </div>
     </li>
@@ -138,7 +138,7 @@ function openProject(p) {
     <h3>Stack</h3>
     <p class="stack">${p.tech.map(esc).join(' · ')}</p>
     <p class="dialog-links">
-      ${liveLink(p, 'Live site')}
+      ${liveLink(p, 'Live dashboard')}
       ${repoLinks(p, 'Source on GitHub')}
     </p>
   `;

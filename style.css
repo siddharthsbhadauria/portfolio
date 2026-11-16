@@ -1115,3 +1115,7 @@ button.node:hover { border-color: var(--accent); color: var(--accent); }
 @media (max-width: 600px) {
   .badge-year { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* v10.6: make the dashboard link the obvious first action */
+.project-links .live-link { font-weight: 600; }
+.project-links a.live-link { color: var(--accent); }
