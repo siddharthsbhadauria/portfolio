@@ -74,55 +74,54 @@ window.PORTFOLIO_DATA = {
       "id": "cloud-finops-rag",
       "category": "genai",
       "title": "Cloud-FinOps-RAG",
-      "tagline": "Autonomous Multi-Cloud AI Tokenomics & Price Benchmark Evaluator",
-      "description": "Serverless data engineering pipeline built on GitHub Actions. Dynamically ingests tokenomics across 15+ LLM provider endpoints (Google Gemini, Anthropic Claude, OpenAI GPT-4.5/o3-mini, DeepSeek), validates schemas via Great Expectations, computes cost-per-intelligence ratios in DuckDB and generates daily RAG executive summaries.",
-      "long_description": "Cloud-FinOps-RAG is an autonomous serverless benchmarking engine that continuously monitors LLM pricing, tokenomics and performance ratios. Using automated GitHub Actions workflows, it queries live pricing APIs, executes schema validation gates via Great Expectations, stores structured analytical datasets in DuckDB and generates daily RAG executive digests hosted directly on GitHub Pages.",
+      "tagline": "Daily LLM API price benchmark",
+      "description": "GitHub Actions pipeline that pulls API prices for the top 60 LLMs from OpenRouter, checks them against a data contract, joins published MMLU scores and ranks each model in DuckDB by quality per blended dollar.",
+      "long_description": "Every day a GitHub Actions job pulls current per-token prices for the top 60 models across eight providers from the OpenRouter API. A Python data contract rejects missing fields, negative prices and out-of-range scores before anything is published. DuckDB blends input and output prices 75/25 and divides MMLU by that price to score value. The results go to a static dashboard on GitHub Pages with a price-against-quality chart and a sortable table.",
       "architecture": [
-        "Automated daily GitHub Actions workflow execution",
-        "Multi-provider API ingestion for 15+ LLM models (Gemini, Claude, GPT, DeepSeek)",
-        "Great Expectations data contract and schema validation",
-        "Analytical aggregation using DuckDB in Python",
-        "Automated RAG synthesis & GitHub Pages deployment"
+        "Daily GitHub Actions cron",
+        "OpenRouter models API for live prices across 8 providers",
+        "Python data contract: required fields, non-negative prices, MMLU 0 to 100",
+        "DuckDB: blended price (75% input, 25% output) and MMLU per dollar",
+        "Static dashboard on GitHub Pages: scatter chart and sortable table"
       ],
       "tech": [
         "Python",
         "DuckDB",
-        "Great Expectations",
-        "RAG",
+        "OpenRouter API",
         "GitHub Actions",
         "GitHub Pages"
       ],
       "live_url": "https://siddharthsbhadauria.github.io/cloud-finops-rag/",
       "github_url": "https://github.com/siddharthsbhadauria/cloud-finops-rag",
-      "badge": "Serverless Cloud-Native",
-      "summary": "Daily benchmark of LLM API prices across 15+ providers. Validated with Great Expectations, analysed in DuckDB, published to GitHub Pages.",
+      "badge": "Runs daily",
+      "summary": "Daily benchmark of 60 LLM API prices across 8 providers, scored by MMLU per dollar in DuckDB and published to GitHub Pages.",
       "cadence": "runs daily"
     },
     {
       "id": "tf-cost-governor",
       "category": "homelab",
       "title": "TF-Cost-Governor",
-      "tagline": "Automated Multi-Cloud Terraform FinOps & Security Advisory Engine",
-      "description": "Serverless IaC governance engine built on GitHub Actions. Parses multi-cloud Terraform blueprints across AWS EKS, GCP Vertex AI and Azure AKS, evaluates cost benchmarks & Policy-as-Code rules via DuckDB and Checkov and deploys a live JetBrains Mono digital advisory dashboard.",
-      "long_description": "TF-Cost-Governor is an automated multi-cloud IaC evaluation engine designed to enforce cloud cost optimization and security compliance across Terraform codebases. Running on scheduled GitHub Actions workflows, it parses HCL modules for AWS, GCP and Azure, runs in-memory SQL analytics using DuckDB, evaluates Checkov policy guardrails and renders real-time governance metrics on GitHub Pages.",
+      "tagline": "Monthly cost and guardrails for Terraform, before apply",
+      "description": "GitHub Actions job that parses three Terraform blueprints (AWS EKS with GPU nodes, GCP Vertex AI with BigQuery, Azure AKS with Cosmos DB), prices every resource, records the security guardrail it enforces and totals the monthly bill in DuckDB.",
+      "long_description": "Every morning a Python script reads each resource block in the AWS, GCP and Azure blueprints. It maps each one to an on-demand monthly price estimate and to the control it is written to enforce (KMS encryption, IMDSv2, private endpoints, TLS 1.2), then totals cost by cloud and by resource in DuckDB. The dashboard shows where the money goes and one way to spend less on each resource.",
       "architecture": [
-        "Multi-cloud HCL blueprints for AWS EKS, GCP Vertex AI and Azure AKS",
-        "Automated daily GitHub Actions evaluation workflow",
-        "DuckDB in-memory SQL analytics & Checkov Policy-as-Code scanning",
-        "JetBrains Mono interactive governance dashboard on GitHub Pages"
+        "Terraform blueprints for AWS EKS, GCP Vertex AI and Azure AKS",
+        "Python parser for every resource block, no plan or apply needed",
+        "Per-resource monthly price estimates and security guardrails",
+        "DuckDB totals by cloud and by resource",
+        "Daily GitHub Actions run publishing to GitHub Pages"
       ],
       "tech": [
         "Terraform",
+        "Python",
         "DuckDB",
-        "Python 3.11",
         "GitHub Actions",
-        "Checkov",
         "GitHub Pages"
       ],
       "live_url": "https://siddharthsbhadauria.github.io/tf-cost-governor/",
       "github_url": "https://github.com/siddharthsbhadauria/tf-cost-governor",
-      "badge": "Automated IaC Engine",
-      "summary": "Cost and security checks for Terraform across AWS, GCP and Azure. Checkov policies plus DuckDB cost queries, run daily on GitHub Actions.",
+      "badge": "Runs daily",
+      "summary": "Estimated monthly cost and security guardrails for multi-cloud Terraform (AWS, GCP, Azure), totalled in DuckDB and refreshed daily on GitHub Actions.",
       "cadence": "runs daily"
     }
   ],

@@ -91,7 +91,7 @@ function initBand(grid) {
 }
 
 // The project dashboards still use the old visual style. Flip this once they're restyled.
-const SHOW_LIVE_LINKS = false;
+const SHOW_LIVE_LINKS = true;
 
 // Source links: one per repo when a project spans several.
 const repoLinks = (p, label) => (p.repos || [{ name: label, url: p.github_url }])
