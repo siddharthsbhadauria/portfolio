@@ -215,13 +215,13 @@
     {
       "company": "Deloitte (Client: Motor Insurers’ Bureau)",
       "role": "Data Engineer",
-      "period": "London, UK | Mar 2021 - May 2021",
+      "period": "London, UK | Mar 2022 - May 2022",
       "highlights": [
         "Engineered data quality scoring platform on Azure for 35M+ vehicle insurance records across MID, CUE and MIAFTR databases using Terraform, ADF, Azure SQL and IICS."
       ]
     },
     {
-      "company": "HSBC",
+      "company": "Infosys (Client: HSBC)",
       "role": "Senior Cloud & Data Engineer",
       "period": "London, UK / Pune, India | Jan 2015 - Nov 2021",
       "highlights": [
