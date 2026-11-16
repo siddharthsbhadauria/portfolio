@@ -9,7 +9,7 @@ window.PORTFOLIO_DATA = {
     "credly": "https://www.credly.com/users/siddharthsbhadauria/badges/credly",
     "github": "https://github.com/siddharthsbhadauria",
     "resume_url": "assets/Siddharth_Singh_Bhadauria_Resume.pdf",
-    "bio": "Senior Cloud, Data and AI Engineer with 12+ years of experience architecting enterprise multi-cloud platforms, Generative AI infrastructure and automated data pipelines across GCP, AWS and Azure. Certified Google Professional ML & Data Engineer."
+    "bio": "Senior Cloud and Data Engineer with 12+ years building cloud infrastructure, data pipelines and AI platforms on Google Cloud (GCP), AWS and Microsoft Azure, mostly for banks and other regulated clients. At Deloitte I currently build GCP logging, asset inventory and alerting infrastructure for JPMorgan Chase that handles 50M+ events a day. Before that I maintained the Terraform AWS EKS modules behind 3,600+ deployments and 700+ microservices. I also co-built Deloitte's internal GenAI platform used by 75,000+ staff."
   },
   "stats": [
     {
@@ -36,7 +36,7 @@ window.PORTFOLIO_DATA = {
       "title": "Homelab ML pipeline",
       "badge": "Self-hosted · two repos",
       "summary": "Telemetry to alert, end to end on a home NAS. auto-datapulse collects host and disk metrics every 15 minutes and models them with dbt on DuckDB; homelab-mlops builds 18 sliding-window features, trains Isolation Forest and LOF with MLflow tracking, serves scores from FastAPI in under 10 ms and opens GitHub Issues on anomalies.",
-      "long_description": "Two services that share one DuckDB file on a UGREEN NAS. auto-datapulse is the data side: it collects host and disk telemetry every 15 minutes, checks each batch against a data contract and builds dbt models on DuckDB. homelab-mlops is the ML side: it reads that store, engineers sliding-window features in SQL, benchmarks anomaly models in MLflow, serves real-time scores through FastAPI with Prometheus metrics and Grafana dashboards, and raises incidents as GitHub Issues.",
+      "long_description": "Two services that share one DuckDB file on a UGREEN NAS. auto-datapulse is the data side: it collects host and disk telemetry every 15 minutes, checks each batch against a data contract and builds dbt models on DuckDB. homelab-mlops is the ML side: it reads that store, engineers sliding-window features in SQL, benchmarks anomaly models in MLflow, serves real-time scores through FastAPI with Prometheus metrics and Grafana dashboards and raises incidents as GitHub Issues.",
       "architecture": [
         "auto-datapulse: 15-minute collection, data-contract checks, dbt Core models on DuckDB",
         "homelab-mlops: 18 sliding-window features computed in DuckDB SQL",
@@ -129,7 +129,7 @@ window.PORTFOLIO_DATA = {
       "title": "Awesome-AI-Discoveries",
       "tagline": "A running log of open-source AI repos",
       "description": "Python bot on GitHub Actions that searches GitHub three times a day for agent, RAG and MCP repositories and logs one new find per run to a searchable directory.",
-      "long_description": "Three times a day a small Python bot runs eight GitHub search queries by topic with a star floor (for example topic:rag stars:>500), sorted by most recently updated. It skips anything already logged, adds the first new repo to the README and a JSON file, and a Pages deploy turns that into a directory with the latest finds, a breakdown by topic and a filterable table. 270+ repos so far.",
+      "long_description": "Three times a day a small Python bot runs eight GitHub search queries by topic with a star floor (for example topic:rag stars:>500), sorted by most recently updated. It skips anything already logged, adds the first new repo to the README and a JSON file. A Pages deploy turns that into a directory with the latest finds, a breakdown by topic and a filterable table. 270+ repos so far.",
       "architecture": [
         "GitHub Actions cron at 00:00, 08:00 and 16:00 UTC",
         "Eight GitHub search API queries by topic with star floors",
@@ -154,15 +154,15 @@ window.PORTFOLIO_DATA = {
     {
       "company": "Deloitte (Client: JPMorgan Chase & Co.)",
       "role": "Senior Cloud Infrastructure & Observability Engineer",
-      "period": "London, UK | June 2026 - Present",
+      "period": "London, UK | Jun 2026 - Present",
       "highlights": [
-        "Built organisation-wide log routing pipelines in Terraform across audit, network flow and platform telemetry, fanning out organisation-level sinks into 16 Pub/Sub topics for streaming to SIEM and Kafka Databus.",
-        "Cut long-term log storage costs by ~94% using GCS lifecycle policies that move data to Archive tier after 90 days and enforce deletion at 540 days.",
-        "Standardised Cloud KMS HSM encryption keys (CMEK) with 30-day rotation across all storage and streaming services (GCS, Cloud Logging, BigQuery and Pub/Sub).",
-        "Designed an active/standby two-region asset inventory export pipeline running 12 scheduled batch jobs daily on Cloud Run v2 and Cloud Functions Gen2, maintaining a 2-hour data freshness target.",
-        "Migrated the export service to Cloud Run v2 with zero downtime using container digest validation, Direct VPC Egress and keyless Workload Identity Federation.",
-        "Built an alert transport pipeline routing Cloud Monitoring alerts to Kafka and ServiceNow via Pub/Sub and time-partitioned GCS storage, keeping delivery delay under 60 seconds.",
-        "Shipped 190+ production pull requests across 3 infrastructure repositories in 7 months, using environment-agnostic Terraform blueprints, automated BDD test suites and pipeline monitoring."
+        "Built organisation-wide log routing in Terraform for audit, network flow and platform logs, fanning organisation-level sinks into 16 Pub/Sub topics that stream to the SIEM and the Kafka databus.",
+        "Cut long-term log storage costs by about 94% with GCS lifecycle rules that move logs to Archive after 90 days and delete them at 540 days.",
+        "Rolled out Cloud KMS HSM customer-managed keys (CMEK) with 30-day rotation across GCS, Cloud Logging, BigQuery and Pub/Sub.",
+        "Designed an active/standby asset inventory export across two regions: 12 scheduled jobs a day on Cloud Run and Cloud Functions with a 2-hour freshness target.",
+        "Moved the export service to Cloud Run v2 without downtime, using container digest pinning, Direct VPC egress and keyless Workload Identity Federation.",
+        "Built an alert pipeline that sends Cloud Monitoring alerts to Kafka and ServiceNow through Pub/Sub, with delivery in under 60 seconds.",
+        "Wrote Terraform blueprints that deploy unchanged across environments, each covered by automated BDD tests (pytest-bdd)."
       ]
     },
     {
@@ -170,46 +170,50 @@ window.PORTFOLIO_DATA = {
       "role": "Parental Leave",
       "period": "London, UK | Oct 2025 - May 2026",
       "highlights": [
-        "Took planned parental leave following the successful completion of the AWS EKS cluster deployment project for JPMorgan Chase."
+        "Planned parental leave after the AWS EKS platform engagement ended."
       ]
     },
     {
       "company": "Deloitte (Client: JPMorgan Chase & Co.)",
-      "role": "Senior Consultant & DevOps Engineer",
-      "period": "London, UK | Aug 2024 - Sept 2025",
+      "role": "Senior Consultant, DevOps Engineer",
+      "period": "London, UK | Aug 2024 - Sep 2025",
       "highlights": [
-        "Created, managed and continuously improved a Terraform AWS EKS cluster module alongside a Stack microservices blueprint for JPMorgan Chase, reducing provisioning time by 65%.",
-        "Scaled EKS Cluster module to over 3,600+ active deployments supporting 700+ microservices applications across 20+ Lines of Business (LoBs) across the bank.",
-        "Evolved EKS cluster module into a multi-tenant deployment model and managed zero-downtime Kubernetes version upgrades (v1.19 through v1.34) supporting 50+ Production releases.",
-        "Built automated testing and acceptance test suites using Python and Go to validate module enhancements on EKS clusters."
+        "Maintained the core Terraform AWS EKS cluster modules and the blueprints that connect services to S3, DynamoDB, RDS, MSK, SQS and SNS, cutting provisioning time by 65%.",
+        "Scaled the EKS module to 3,600+ deployments running 700+ microservices for 20+ business lines.",
+        "Reworked the cluster module into a multi-tenant model with per-tenant resource allocation and isolation.",
+        "Led Kubernetes upgrades from v1.19 to v1.34 with written migration guides, across 50+ production releases with no downtime.",
+        "Built Python and Go test suites that validate module changes before they reach deployment."
       ]
     },
     {
       "company": "Deloitte (Internal: PairD GenAI Platform)",
-      "role": "Senior Consultant - AI Platform Lead",
+      "role": "Senior Consultant",
       "period": "London, UK | May 2024 - Aug 2024",
       "highlights": [
-        "Co-engineered Deloitte's internal PairD Generative AI platform serving 75,000+ employees, handling 100,000+ daily queries across OpenAI GPT and Google Gemini models.",
-        "Architected secure networking using Google Private Service Connect (PSC) and custom DNS forwarding to achieve 100% network isolation with zero public internet exposure for Gemini models.",
-        "Designed scalable RAG pipelines with Postgres pgvector and Qdrant; accelerated team engineering velocity by 35% using AI coding tools (GitHub Copilot, Claude Code, Google Antigravity)."
+        "Co-built Deloitte's internal AI assistant for 75,000+ staff, serving 100,000+ queries a day across OpenAI and Google Gemini models.",
+        "Kept model traffic on private networks using Google Private Service Connect and custom DNS forwarding.",
+        "Built RAG pipelines on Postgres pgvector and Qdrant and tuned prompt templates to improve retrieval accuracy.",
+        "Converted Azure workloads to Terraform and ARM templates and deployed containers to Azure Container Apps and AKS."
       ]
     },
     {
       "company": "Deloitte (Internal: GenAI LLM Evaluation)",
-      "role": "Senior Consultant - LLM Benchmarking",
+      "role": "Senior Consultant",
       "period": "London, UK | Apr 2024 - May 2024",
       "highlights": [
-        "Built an automated LLM evaluation pipeline using Confident AI DeepEval to quantify model quality across 4 core metrics (Answer Relevancy, Contextual Accuracy, Completeness, Latency) for Mistral 7B, Llama 3 and Gemini 1.0 Pro on GCP Vertex AI.",
-        "Authored Python automation scripts to harvest and visualize metrics, reducing benchmarking cycle time from 2 weeks to under 4 hours."
+        "Built an evaluation pipeline with DeepEval scoring answer relevancy, contextual accuracy, completeness and latency.",
+        "Benchmarked Mistral 7B, Llama 3 and Gemini 1.0 Pro on Vertex AI against a standard set of business prompts.",
+        "Automated metric collection and charts in Python, cutting evaluation time from 2 weeks to under 4 hours."
       ]
     },
     {
-      "company": "Deloitte (Internal: DataSAFE Accelerator)",
+      "company": "Deloitte (Internal: DataSAFE M&A Accelerator)",
       "role": "Architect & Senior Developer",
       "period": "London, UK | Dec 2023 - Mar 2024",
       "highlights": [
-        "Designed data processing architecture for 10TB+ of GPG-encrypted datasets with 100% file integrity validation.",
-        "Engineered Python scripts for PII detection and masking across 1,000+ database columns using Fernet cryptography, Azure Blob Storage, Azure Cosmos DB and Azure Key Vault."
+        "Built processing pipelines for 10TB+ of GPG-encrypted datasets with schema validation, integrity checks and automated decryption.",
+        "Wrote Python tooling that finds and masks personal data (PII) across 1,000+ database columns using Fernet encryption.",
+        "Built event-driven Azure Functions that unmask datasets only for authorised consumers."
       ]
     },
     {
@@ -217,8 +221,10 @@ window.PORTFOLIO_DATA = {
       "role": "Azure Data Engineer",
       "period": "London, UK | Jul 2023 - Aug 2023",
       "highlights": [
-        "Developed data migration and archival pipelines moving legacy Credit Suisse applications and trade data into UBS Azure cloud infrastructure across 1,000+ core systems.",
-        "Built Python-backed Azure Functions and Azure Data Factory (ADF) pipelines, accelerating ingestion throughput by 3x from PostgreSQL, Sybase and Oracle databases."
+        "Built migration and archival pipelines moving legacy Credit Suisse application data into UBS Azure across 1,000+ systems.",
+        "Tripled ingestion throughput from PostgreSQL, Sybase and Oracle with Azure Functions and Azure Data Factory pipelines.",
+        "Provisioned infrastructure with Terraform and set up CI/CD in GitLab and Azure DevOps.",
+        "Designed file validation, GPG encryption and archival workflows that meet financial compliance and legal hold rules."
       ]
     },
     {
@@ -226,16 +232,19 @@ window.PORTFOLIO_DATA = {
       "role": "Senior Cloud Data Engineer",
       "period": "London, UK | Jul 2022 - Apr 2023",
       "highlights": [
-        "Architected cloud ingestion framework for 40,000+ employee HR records from Oracle HCM, Workday and SuccessFactors into GCP BigQuery.",
-        "Enforced data security through GPG encryption, role-based access controls and automated key rotation shell scripts, reducing overhead by 80%."
+        "Built pipelines loading HR records for 40,000+ employees from Oracle HCM, Workday and SuccessFactors into BigQuery.",
+        "Protected the data with GPG encryption, role-based access and Python scripts for automated PII masking.",
+        "Automated GPG key generation and rotation with shell scripts, cutting maintenance effort by 80%."
       ]
     },
     {
-      "company": "Deloitte (Client: Motor Insurers’ Bureau)",
+      "company": "Deloitte (Client: Motor Insurers' Bureau)",
       "role": "Data Engineer",
       "period": "London, UK | Mar 2022 - May 2022",
       "highlights": [
-        "Engineered data quality scoring platform on Azure for 35M+ vehicle insurance records across MID, CUE and MIAFTR databases using Terraform, ADF, Azure SQL and IICS."
+        "Built a data quality scoring platform on Azure for the MID, CUE and MIAFTR insurance databases (35M+ records).",
+        "Provisioned Azure Data Factory, Azure SQL Server, storage accounts and Informatica Secure Agents with Terraform.",
+        "Configured Informatica Cloud (IICS) profiling and validation rules that produce automated quality scorecards."
       ]
     },
     {
@@ -243,98 +252,124 @@ window.PORTFOLIO_DATA = {
       "role": "Senior Cloud & Data Engineer",
       "period": "London, UK / Pune, India | Jan 2015 - Nov 2021",
       "highlights": [
-        "Executed AWS to GCP migration proof-of-concept for CESOP financial payment reporting using Terraform, DataProc and Cloud Functions.",
-        "Engineered near-real-time streaming processing 10M+ daily messages from Apache Kafka to BigQuery via GCS using Apache NiFi and Kafka Connect."
+        "CESOP reporting: built an AWS to GCP migration proof of concept for payment reporting, with Terraform for Dataproc and Cloud Functions.",
+        "Streaming: built pipelines moving 10M+ messages a day from Apache Kafka to BigQuery through GCS with Apache NiFi.",
+        "Change data capture: set up IBM CDC (DB2) and Attunity Replicate (Oracle) through Kafka Connect and AWS Lambda for transfers between AWS and GCP.",
+        "Legacy migration: led transformation pipelines in IBM DataStage, Hadoop, Hive, Sqoop and Oracle for the Common Data Repository migration."
       ]
     }
   ],
   "skills": [
     {
-      "category": "Cloud Infrastructure & DevOps",
+      "category": "Google Cloud",
       "items": [
-        "Google Cloud Platform (GCP)",
-        "Microsoft Azure",
-        "Amazon Web Services (AWS)",
-        "AWS EKS",
-        "Multi-Cloud Unified Control Plane Architecture",
-        "GCP Cloud Asset Inventory (CAI)",
-        "Log Routers & Sinks & Buckets",
-        "GCS Object Lifecycle Management",
-        "CMEK & Cloud KMS HSM",
-        "BigQuery Linked Datasets",
-        "Cloud Run v2 (Binary Authorization)",
-        "Cloud Functions Gen2",
-        "Cloud Scheduler & Artifact Registry",
-        "Terraform (IaC)",
-        "Docker & Kubernetes (AKS, GKE)",
-        "Google Private Service Connect",
+        "BigQuery",
+        "Pub/Sub",
+        "Cloud Run",
+        "Cloud Functions",
+        "Cloud Scheduler",
+        "Cloud Logging (Log Router",
+        "sinks",
+        "log buckets)",
+        "Cloud Monitoring",
+        "Cloud Asset Inventory",
+        "Cloud Storage",
+        "Cloud KMS",
+        "Private Service Connect",
+        "Vertex AI",
+        "Artifact Registry",
+        "Dataproc"
+      ]
+    },
+    {
+      "category": "AWS",
+      "items": [
+        "EKS",
+        "S3",
+        "DynamoDB",
+        "RDS",
+        "MSK",
+        "SQS",
+        "SNS",
+        "Lambda"
+      ]
+    },
+    {
+      "category": "Azure",
+      "items": [
+        "AKS",
+        "Container Apps",
+        "Functions",
+        "Data Factory",
+        "API Management",
+        "Blob Storage",
+        "Cosmos DB",
+        "SQL Server",
+        "Key Vault",
+        "Azure OpenAI"
+      ]
+    },
+    {
+      "category": "Infrastructure & DevOps",
+      "items": [
+        "Terraform",
+        "Kubernetes",
+        "Docker",
         "GitHub Actions",
-        "GitLab CI/CD"
+        "GitLab CI/CD",
+        "Azure DevOps",
+        "ARM templates"
       ]
     },
     {
-      "category": "Generative AI & MLOps",
+      "category": "Data Engineering",
       "items": [
-        "Retrieval-Augmented Generation (RAG)",
-        "pgvector & Qdrant & ChromaDB",
-        "Confident AI DeepEval Framework",
-        "Prompt Engineering",
-        "Azure OpenAI",
-        "GCP Vertex AI",
-        "Gemini 1.5 Pro/Flash",
-        "Llama 3",
-        "Mistral 7B"
-      ]
-    },
-    {
-      "category": "AI Coding Tools & Velocity",
-      "items": [
-        "GitHub Copilot",
-        "Claude Code",
-        "Google Antigravity",
-        "VS Code & Git",
-        "PyTest & Go Test"
-      ]
-    },
-    {
-      "category": "Data Engineering & Streaming",
-      "items": [
-        "Kafka Connect Source Connectors",
-        "Enterprise Databus",
-        "BigQuery Linked Datasets",
-        "Pub/Sub Cloud Storage Subscriptions",
-        "Cloud Monitoring Notification Channels",
-        "DuckDB & Polars",
-        "Great Expectations",
-        "BigQuery & Pub/Sub",
-        "Splunk Log Ingestion",
-        "Azure Data Factory (ADF)",
+        "Apache Kafka",
+        "Kafka Connect",
+        "Apache NiFi",
         "dbt Core",
-        "Apache Kafka & Apache NiFi"
-      ]
-    },
-    {
-      "category": "Databases & Storage",
-      "items": [
+        "DuckDB",
+        "AbInitio",
+        "IBM DataStage",
         "PostgreSQL",
-        "Azure SQL Server",
-        "Oracle 12c & Sybase",
-        "Azure Cosmos DB",
-        "AWS S3 & DynamoDB & RDS",
-        "Google Cloud Storage (GCS)",
-        "Azure Blob Storage"
+        "Oracle"
       ]
     },
     {
-      "category": "Security & Compliance",
+      "category": "AI & ML",
       "items": [
-        "CMEK Encryption & Cloud KMS HSM",
-        "Workload Identity Federation (Keyless)",
-        "Kerberos-Authenticated Egress Proxy",
-        "PII Identification & Fernet Masking",
-        "GPG Key Management & Rotation",
-        "Private DNS Forwarding",
-        "Azure Key Vault"
+        "RAG",
+        "pgvector",
+        "Qdrant",
+        "DeepEval",
+        "Gemini",
+        "Llama 3",
+        "Mistral 7B",
+        "scikit-learn",
+        "MLflow",
+        "FastAPI"
+      ]
+    },
+    {
+      "category": "Security",
+      "items": [
+        "CMEK with Cloud KMS HSM",
+        "Workload Identity Federation",
+        "PII masking",
+        "GPG key management"
+      ]
+    },
+    {
+      "category": "Languages & Tools",
+      "items": [
+        "Python",
+        "Go",
+        "SQL",
+        "PySpark",
+        "Bash",
+        "pytest",
+        "GitHub Copilot",
+        "Claude Code"
       ]
     }
   ],
@@ -468,7 +503,7 @@ window.PORTFOLIO_DATA = {
   "outcomes": [
     {
       "value": "3,600+",
-      "label": "EKS cluster deployments on a Terraform module I built and maintained",
+      "label": "EKS cluster deployments on the Terraform module I maintained",
       "context": "JPMorgan Chase"
     },
     {
@@ -483,12 +518,12 @@ window.PORTFOLIO_DATA = {
     },
     {
       "value": "65%",
-      "label": "faster EKS provisioning with the cluster module and blueprint I created",
+      "label": "faster EKS provisioning from the cluster module and service blueprints",
       "context": "JPMorgan Chase"
     },
     {
       "value": "4 hrs",
-      "label": "LLM benchmarking cycle, down from 2 weeks, with DeepEval automation",
+      "label": "LLM evaluation turnaround, down from 2 weeks, with DeepEval automation",
       "context": "Deloitte"
     }
   ],
