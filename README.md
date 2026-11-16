@@ -1,32 +1,30 @@
-# ⚡ Siddharth Singh Bhadauria - Senior Cloud, Data & AI Engineer Portfolio
+# portfolio
 
-[![Netlify Deploy](https://img.shields.io/badge/Live%20Portfolio-Netlify-d96b43?style=for-the-badge&logo=netlify&logoColor=white)](https://siddharthsbhadauria.netlify.app/)
-[![GitHub Pages](https://img.shields.io/badge/Live%20Portfolio-GitHub%20Pages-6366f1?style=for-the-badge&logo=github&logoColor=white)](https://siddharthsbhadauria.github.io/portfolio/)
+My personal site: https://siddharthsbhadauria.netlify.app/ (mirrored at https://siddharthsbhadauria.github.io/portfolio/).
 
-> 🌐 **Live Netlify Web App**: [https://siddharthsbhadauria.netlify.app/](https://siddharthsbhadauria.netlify.app/)  
-> 🌐 **GitHub Pages Mirror**: [https://siddharthsbhadauria.github.io/portfolio/](https://siddharthsbhadauria.github.io/portfolio/)
+I'm a Senior Cloud, Data & AI Engineer in London with 12+ years across GCP, AWS and Azure. The site covers my work history, certifications and the side projects below, and has a contact form.
 
-Welcome to my personal developer portfolio showcasing **12+ years of experience** in Senior Cloud Engineering, Data Engineering and Generative AI Architectures across **GCP, AWS and Azure**.
+## Projects shown on the site
 
----
+| Project | What it does |
+| :--- | :--- |
+| [homelab-mlops](https://github.com/siddharthsbhadauria/homelab-mlops) | Anomaly detection on my NAS telemetry with scikit-learn, MLflow, FastAPI and Prometheus ([dashboard](https://siddharthsbhadauria.github.io/homelab-mlops/)) |
+| [auto-datapulse](https://github.com/siddharthsbhadauria/auto-datapulse) | Collects NAS telemetry every 15 minutes into DuckDB, with a data contract and dbt models |
+| [cloud-finops-rag](https://github.com/siddharthsbhadauria/cloud-finops-rag) | Daily LLM API price benchmark: 60 models, ranked by MMLU per dollar ([dashboard](https://siddharthsbhadauria.github.io/cloud-finops-rag/)) |
+| [tf-cost-governor](https://github.com/siddharthsbhadauria/tf-cost-governor) | Monthly cost estimates for AWS, GCP and Azure Terraform blueprints ([dashboard](https://siddharthsbhadauria.github.io/tf-cost-governor/)) |
+| [awesome-ai-discoveries](https://github.com/siddharthsbhadauria/awesome-ai-discoveries) | Bot that logs one new open-source AI repo three times a day ([directory](https://siddharthsbhadauria.github.io/awesome-ai-discoveries/)) |
 
-## 🚀 Featured Open-Source Projects
+## How the site is built
 
-1. **[TF-Cost-Governor](https://github.com/siddharthsbhadauria/tf-cost-governor)**: Automated Multi-Cloud Terraform FinOps & Security Advisory Engine ([Live Dashboard](https://siddharthsbhadauria.github.io/tf-cost-governor/)).
-2. **[Cloud-FinOps-RAG](https://github.com/siddharthsbhadauria/cloud-finops-rag)**: Autonomous Multi-Cloud AI Tokenomics & Price Benchmark Evaluator ([Live Dashboard](https://siddharthsbhadauria.github.io/cloud-finops-rag/)).
-3. **[Awesome-AI-Discoveries](https://github.com/siddharthsbhadauria/awesome-ai-discoveries)**: Automated AI GitHub Repository Aggregator & Web Directory ([Live Directory](https://siddharthsbhadauria.github.io/awesome-ai-discoveries/)).
-4. **[Auto-DataPulse](https://github.com/siddharthsbhadauria/auto-datapulse)**: UGREEN NAS Infrastructure Telemetry & Lakehouse Engine.
-5. **[Interactive Engineering Portfolio](https://github.com/siddharthsbhadauria/portfolio)**: Personal Interactive Engineering Portfolio & Live Showcase.
+Plain HTML, CSS and JavaScript with no build step. All content lives in `data/portfolio_data.js`; `app.js` renders it. Pushing to `main` deploys to both GitHub Pages and Netlify.
 
----
+To run it locally: `python -m http.server` and open http://localhost:8000.
 
-## 📜 Verified Credentials & Social Links
-- **Netlify Site**: [siddharthsbhadauria.netlify.app](https://siddharthsbhadauria.netlify.app/)
-- **LinkedIn**: [linkedin.com/in/siddharthsbhadauria](https://linkedin.com/in/siddharthsbhadauria)
-- **Credly Badges (11 Verified)**: [credly.com/users/siddharthsbhadauria/badges/credly](https://www.credly.com/users/siddharthsbhadauria/badges/credly)
-- **GitHub Landing**: [github.com/siddharthsbhadauria](https://github.com/siddharthsbhadauria)
+## Links
 
----
+- LinkedIn: https://linkedin.com/in/siddharthsbhadauria
+- Credly: https://www.credly.com/users/siddharthsbhadauria/badges
 
-## 🛡️ License
-Distributed under the MIT License &copy; 2026 Siddharth Singh Bhadauria
+## License
+
+MIT
